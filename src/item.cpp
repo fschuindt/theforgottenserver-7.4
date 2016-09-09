@@ -1466,8 +1466,8 @@ std::string Item::getWeightDescription(const ItemType& it, uint32_t weight, uint
 	} else if (weight < 100) {
 		ss << "0." << weight;
 	} else {
-		std::string weightString = std::to_string(weight);
-		weightString.insert(weightString.end() - 2, '.');
+		std::string weightString = std::to_string(weight / 10);
+		weightString.insert(weightString.end() - 1, '.');
 		ss << weightString;
 	}
 
