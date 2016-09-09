@@ -43,6 +43,7 @@ class ConfigManager
 			CLASSIC_EQUIPMENT_SLOTS,
 			UH_TRAP,
 			HEIGHT_STACK_BLOCK,
+			ALLOW_FIGHT_BACK,
 
 			LAST_BOOLEAN_CONFIG /* this must be the last one */
 		};

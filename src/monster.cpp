@@ -505,63 +505,61 @@ bool Monster::searchTarget(TargetSearchType_t searchType /*= TARGETSEARCH_DEFAUL
 	}
 
 	switch (searchType) {
-		case TARGETSEARCH_NEAREST: {
-			Creature* target = nullptr;
-			if (!resultList.empty()) {
-				auto it = resultList.begin();
-				target = *it;
+	case TARGETSEARCH_NEAREST: {
+		Creature* target = nullptr;
+		if (!targetList.empty()) {
+			auto it = targetList.begin();
+			target = *it;
 
-				if (++it != resultList.end()) {
-					const Position& targetPosition = target->getPosition();
-					int32_t minRange = Position::getDistanceX(myPos, targetPosition) + Position::getDistanceY(myPos, targetPosition);
-					do {
-						const Position& pos = (*it)->getPosition();
+			if (++it != targetList.end()) {
+				const Position& targetPosition = target->getPosition();
+				int32_t minRange = Position::getDistanceX(myPos, targetPosition) + Position::getDistanceY(myPos, targetPosition);
+				do {
+					const Position& pos = (*it)->getPosition();
 
-						int32_t distance = Position::getDistanceX(myPos, pos) + Position::getDistanceY(myPos, pos);
-						if (distance < minRange) {
-							target = *it;
-							minRange = distance;
-						}
-					} while (++it != resultList.end());
-				}
-			} else {
-				int32_t minRange = std::numeric_limits<int32_t>::max();
-				for (Creature* creature : targetList) {
-					if (!isTarget(creature)) {
-						continue;
-					}
-
-					const Position& pos = creature->getPosition();
 					int32_t distance = Position::getDistanceX(myPos, pos) + Position::getDistanceY(myPos, pos);
 					if (distance < minRange) {
-						target = creature;
+						target = *it;
 						minRange = distance;
 					}
+				} while (++it != targetList.end());
+			}
+		}
+		else {
+			int32_t minRange = std::numeric_limits<int32_t>::max();
+			for (Creature* creature : targetList) {
+
+				const Position& pos = creature->getPosition();
+				int32_t distance = Position::getDistanceX(myPos, pos) + Position::getDistanceY(myPos, pos);
+				if (distance < minRange) {
+					target = creature;
+					minRange = distance;
 				}
 			}
-
-			if (target && selectTarget(target)) {
-				return true;
-			}
-			break;
 		}
 
-		case TARGETSEARCH_DEFAULT:
-		case TARGETSEARCH_ATTACKRANGE:
-		case TARGETSEARCH_RANDOM:
-		default: {
-			if (!resultList.empty()) {
-				auto it = resultList.begin();
-				std::advance(it, uniform_random(0, resultList.size() - 1));
-				return selectTarget(*it);
-			}
-
-			if (searchType == TARGETSEARCH_ATTACKRANGE) {
-				return false;
-			}
-
-			break;
+		if (target && selectTarget(target)) {
+			return true;
 		}
+		break;
+	}
+
+	case TARGETSEARCH_DEFAULT:
+	case TARGETSEARCH_ATTACKRANGE:
+	case TARGETSEARCH_RANDOM:
+	default: {
+		if (!resultList.empty()) {
+			auto it = resultList.begin();
+			std::advance(it, uniform_random(0, resultList.size() - 1));
+			return selectTarget(*it);
+		}
+
+		if (searchType == TARGETSEARCH_ATTACKRANGE) {
+			return false;
+		}
+
+		break;
+	}
 	}
 
 	//lets just pick the first target in the list

@@ -244,7 +244,33 @@ Thing* Game::internalGetThing(Player* player, const Position& pos, int32_t index
 			}
 
 			case STACKPOS_USEITEM: {
-				thing = tile->getUseItem();
+				//the first down item is usually the right item unless there is topOrder items with scripts
+				Item* downItem = tile->getTopDownItem();
+
+				//check items with topOrder 2 (ladders, signs, splashes)
+				Item* topOrderItem = tile->getItemByTopOrder(1);
+				if (topOrderItem) {
+					const ItemType& it = Item::items[topOrderItem->getID()];
+					//if the top order item has a height or allows pickupable items we use the first down item instead
+					if (!(downItem && (it.hasHeight || it.allowPickupable))) {
+						thing = topOrderItem;
+					}
+				}
+
+				if (thing == NULL) {
+					//first down item
+					thing = downItem;
+				}
+
+				if (thing == NULL) {
+					//then items with topOrder 3 (doors etc)
+					thing = tile->getTopTopItem();
+				}
+
+				if (thing == NULL) {
+					//and finally the ground
+					thing = tile->ground;
+				}
 				break;
 			}
 
