@@ -1221,7 +1221,7 @@ void ProtocolGame::sendCreatureSay(const Creature* creature, SpeakClasses type, 
 
 	static uint32_t statementId = 0;
 	msg.add<uint32_t>(++statementId);
-	msg.addString(player->getName());
+	msg.addString(creature->getName());
 	msg.addByte(type);
 	if (pos) {
 		msg.addPosition(*pos);
