@@ -3,6 +3,7 @@
 	<health now="75" max="75"/>
 	<look type="125" corpse="4292"/>
 	<targetchange interval="1000" chance="5"/>
+	<targetstrategies nearest="70" health="0" damage="30" random="0"/>
 	<flags>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
@@ -20,7 +21,7 @@
 		<attack name="melee" interval="2000" skill="42" attack="15"/>
 	</attacks>
 	<defenses armor="5" defense="15">
-		<defense name="haste_tiger" interval="2000" chance="11" />
+		<defense name="haste_tiger" interval="2000" chance="11"/>
 	</defenses>
 	<elements>
 	</elements>
@@ -29,7 +30,7 @@
 	<voices interval="2000" chance="5">
 	</voices>
 	<loot>
-		<item id="2671" chance="44000" countmax="2"/><!-- 2 44% ham -->
 		<item id="2666" chance="55000" countmax="3"/><!-- 3 55% meat -->
+		<item id="2671" chance="44000" countmax="2"/><!-- 2 44% ham -->
 	</loot>
 </monster>

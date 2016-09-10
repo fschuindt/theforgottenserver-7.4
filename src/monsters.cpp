@@ -98,6 +98,11 @@ void MonsterType::reset()
 	changeTargetSpeed = 0;
 	changeTargetChance = 0;
 
+	targetStrategiesNearestPercent = 0;
+	targetStrategiesLowerHPPercent = 0;
+	targetStrategiesMostDamagePercent = 0;
+	targetStrategiesRandom = 100;
+
 	scriptInterface = nullptr;
 	creatureAppearEvent = -1;
 	creatureDisappearEvent = -1;
@@ -810,6 +815,33 @@ bool Monsters::loadMonster(const std::string& file, const std::string& monsterNa
 			mType->changeTargetChance = pugi::cast<int32_t>(attr.value());
 		} else {
 			std::cout << "[Warning - Monsters::loadMonster] Missing targetchange chance. " << file << std::endl;
+		}
+	}
+
+	if (node = monsterNode.child("targetstrategies")) {
+
+		if (attr = node.attribute("nearest")) {
+			mType->targetStrategiesNearestPercent = pugi::cast<int32_t>(attr.value());
+		} else {
+			std::cout << "[Warning - Monsters::loadMonster] Missing targetStrategiesNearestPercent. " << file << std::endl;
+		}
+
+		if (attr = node.attribute("health")) {
+			mType->targetStrategiesLowerHPPercent = pugi::cast<int32_t>(attr.value());
+		} else {
+			std::cout << "[Warning - Monsters::loadMonster] Missing targetStrategiesLowerHPPercent. " << file << std::endl;
+		}
+
+		if (attr = node.attribute("damage")) {
+			mType->targetStrategiesMostDamagePercent = pugi::cast<int32_t>(attr.value());
+		} else {
+			std::cout << "[Warning - Monsters::loadMonster] Missing targetStrategiesMostDamagePercent. " << file << std::endl;
+		}
+
+		if (attr = node.attribute("random")) {
+			mType->targetStrategiesRandom = pugi::cast<int32_t>(attr.value());
+		} else {
+			std::cout << "[Warning - Monsters::loadMonster] Missing targetStrategiesRandom. " << file << std::endl;
 		}
 	}
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="wolf" nameDescription="a wolf" race="blood" experience="18" speed="164" manacost="255">
 	<health now="25" max="25"/>
-	<look type="27" corpse="3086"/>
+	<look type="27" corpse="2826"/>
 	<targetchange interval="1000" chance="0"/>
+	<targetstrategies nearest="100" health="0" damage="0" random="0"/>
 	<flags>
 		<flag attackable="1"/>
 		<flag hostile="1"/>

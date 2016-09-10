@@ -3,6 +3,7 @@
 	<health now="70" max="70"/>
 	<look type="124" corpse="4289"/>
 	<targetchange interval="1000" chance="6"/>
+	<targetstrategies nearest="70" health="0" damage="30" random="0"/>
 	<flags>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
@@ -22,17 +23,19 @@
 	<defenses armor="8" defense="9">
 	</defenses>
 	<elements>
+		<element earthPercent="100"/>
 	</elements>
 	<immunities>
-		<immunity poison="1"/>
 	</immunities>
 	<voices interval="2000" chance="5">
 	</voices>
 	<loot>
-		<item id="2148" chance="80000" countmax="15"/><!-- 15 80% gold coin -->
 		<item id="1987" chance="100000"><!-- bag -->
-			<item id="2376" chance="6000"/><!-- 6% sword -->
-			<item id="2398" chance="9000"/><!-- 9% mace -->
+			<inside>
+				<item id="2376" chance="6000"/><!-- 6% sword -->
+				<item id="2398" chance="9000"/><!-- 9% mace -->
+			</inside>
 		</item>
-	 </loot>
+	 	<item id="2148" chance="80000" countmax="15"/><!-- 15 80% gold coin -->
+	</loot>
 </monster>

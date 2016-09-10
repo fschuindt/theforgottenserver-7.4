@@ -140,6 +140,11 @@ class MonsterType
 		int32_t defense;
 		int32_t armor;
 
+		int32_t targetStrategiesNearestPercent;
+		int32_t targetStrategiesLowerHPPercent;
+		int32_t targetStrategiesMostDamagePercent;
+		int32_t targetStrategiesRandom;
+
 		RaceType_t race;
 
 		uint16_t lookcorpse;

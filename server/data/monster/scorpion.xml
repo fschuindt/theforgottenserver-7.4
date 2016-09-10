@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="scorpion" nameDescription="a scorpion" race="venom" experience="45" speed="150" manacost="310">
 	<health now="45" max="45"/>
-	<look type="43" corpse="2897"/>
+	<look type="43" head="0" body="0" legs="0" feet="0" corpse="2897"/>
 	<targetchange interval="1000" chance="10"/>
+	<targetstrategies nearest="60" health="0" damage="0" random="40"/>
 	<flags>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
@@ -22,9 +23,9 @@
 	<defenses armor="14" defense="5">
 	</defenses>
 	<elements>
+		<element earthPercent="100"/>
 	</elements>
 	<immunities>
-		<immunity poison="1"/>
 	</immunities>
 	<voices interval="2000" chance="5">
 	</voices>

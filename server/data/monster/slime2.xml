@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="slime" nameDescription="a slime" race="venom" experience="0" speed="120" manacost="0">
 	<health now="150" max="150"/>
-	<look type="19" corpse="1490"/>
+	<look type="19" corpse="1496"/>
 	<targetchange interval="1000" chance="0"/>
+	<targetstrategies nearest="100" health="0" damage="0" random="0"/>
 	<flags>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
@@ -22,9 +23,9 @@
 	<defenses armor="3" defense="10">
 	</defenses>
 	<elements>
+		<element earthPercent="100"/>
 	</elements>
 	<immunities>
-		<immunity poison="1"/>
 	</immunities>
 	<voices interval="2000" chance="5">
 		<voice sentence="Blubb"/>
