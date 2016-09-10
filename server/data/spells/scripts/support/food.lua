@@ -9,11 +9,11 @@ local food = {
 }
 
 function onCastSpell(creature, var)
-	if not creature:isPlayer() then
-		return false
+	creature:addItem(food[math.random(#food)])
+	if math.random(1, 100) > 50 then
+		creature:addItem(food[math.random(#food)])
 	end
 
-	creature:addItem(food[math.random(#food)])
 	creature:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 	return true
 end

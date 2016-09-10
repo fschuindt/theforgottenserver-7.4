@@ -42,11 +42,13 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-            <item id="2393" chance="2000"/><!-- 2% giant sword -->
-            <item id="2377" chance="8000"/><!-- 8% two-handed sword -->
-            <item id="2387" chance="20000"/><!-- 20% double axe -->
-            <item id="2416" chance="30000"/><!-- 30% crowbar -->
-            <item id="2174" chance="1600"/><!-- 1.6% strange symbol -->
+			<inside>
+				<item id="2393" chance="2000"/><!-- 2% giant sword -->
+				<item id="2377" chance="8000"/><!-- 8% two-handed sword -->
+				<item id="2387" chance="20000"/><!-- 20% double axe -->
+				<item id="2416" chance="30000"/><!-- 30% crowbar -->
+				<item id="2174" chance="1600"/><!-- 1.6% strange symbol -->
+			</inside>
 		</item>
 		<item id="2645" chance="800"/><!-- 0.8% steel boots -->
 		<item id="2489" chance="6000"/><!-- 6% dark armor -->	

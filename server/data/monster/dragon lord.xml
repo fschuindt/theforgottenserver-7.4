@@ -50,11 +50,11 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2167" chance="10000"/><!-- 10% energy ring -->
 				<item id="2392" chance="600"/><!-- 0.6% fire sword -->
 				<item id="2528" chance="600"/><!-- 0.6% tower shield -->
-			
+			</inside>
 		</item>
 		<item id="2479" chance="800"/><!-- 0.8% strange helmet -->
 		<item id="2492" chance="300"/><!-- 0.1% dragon scale mail -->

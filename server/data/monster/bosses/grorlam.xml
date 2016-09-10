@@ -44,10 +44,10 @@
 		<item id="2156" chance="70000"/><!-- 70% 2156 red gem -->
 		<item id="2645" chance="7000"/><!-- 7% steel boots -->
 			<item id="1987" chance="100000"><!-- bag -->
-				
+				<inside>
 				<item id="2166" chance="46000"/><!-- 46% 2166 power ring -->
 				<item id="2509" chance="70000"/><!-- 70% 2509 steel shield -->
-				
+				</inside>
 			</item>
 	</loot>
 </monster>

@@ -1,4 +1,4 @@
-function onCastSpell(creature, variant, isHotkey)
+function onCastSpell(creature, var)
 	if not creature:isPlayer() then
 		return false
 	end

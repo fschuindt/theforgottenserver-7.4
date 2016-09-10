@@ -33,12 +33,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2417" chance="8000"/><!-- 8% battle hammer -->
 				<item id="2513" chance="15000"/><!-- 15% battle shield -->
 				<item id="2387" chance="1200"/><!-- 1.2% double axe -->
 				<item id="2208" chance="300"/><!-- 0.2% axe ring -->
-			
+			</inside>
 		</item>
 		<item id="2483" chance="20000"/><!-- 20% scale armor -->
 		<item id="2643" chance="80000"/><!-- 80% leather boots -->

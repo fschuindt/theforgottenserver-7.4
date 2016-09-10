@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <monsters>
+	<!-- test -->
+	<monster name="Test" file="test/test.xml"/>
 
 	<monster name="Amazon" file="amazon.xml"/>
 	<monster name="Ancient Scarab" file="ancient scarab.xml"/>

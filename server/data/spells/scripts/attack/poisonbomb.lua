@@ -1,8 +1,8 @@
 local combat = Combat()
-combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_FIREDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HITBYFIRE)
-combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_FIRE)
-combat:setParameter(COMBAT_PARAM_CREATEITEM, ITEM_FIREFIELD_PVP_FULL)
+combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_EARTHDAMAGE)
+combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_GREEN_RINGS)
+combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_POISON)
+combat:setParameter(COMBAT_PARAM_CREATEITEM, ITEM_POISONFIELD_PVP)
 
 local area = createCombatArea(AREA_SQUARE1X1)
 combat:setArea(area)

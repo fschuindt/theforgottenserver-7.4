@@ -45,14 +45,14 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2456" chance="26000"/><!-- 26% bow -->
 				<item id="2519" chance="800"/><!-- 0.8% crown shield -->
 				<item id="2392" chance="1000"/><!-- 1% fire sword -->
 				<item id="2377" chance="3000"/><!-- 3% two handed sword -->
 				<item id="2391" chance="2000"/><!-- 2% war hammer -->
 				<item id="2164" chance="1000"/><!-- 1% might ring -->
-			
+			</inside>
 		</item>
 		<item id="2488" chance="1000"/><!-- 1% crown legs -->
 		<item id="2487" chance="1200"/><!-- 1.2% crown armor -->

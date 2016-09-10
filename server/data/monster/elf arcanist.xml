@@ -52,12 +52,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2047" chance="44000"/><!-- 44% candlestick -->
 				<item id="2401" chance="22000"/><!-- 22% staff -->
 				<item id="2189" chance="2000"/><!-- 2% wand of cosmic energy -->
 				<item id="2198" chance="2000"/><!-- 4% elven amulet -->
-			
+			</inside>
 		</item>
 		<item id="2652" chance="14000"/><!-- 14% green tunic -->
 		<item id="2642" chance="26000"/><!-- 26% sandals -->

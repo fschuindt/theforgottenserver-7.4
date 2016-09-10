@@ -65,10 +65,10 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2442" chance="40000"/><!-- 40% heavy machete -->
 				<item id="2187" chance="1000"/><!-- 1% wand of inferno -->
-			
+			</inside>
 		</item>
 		<item id="2663" chance="300"/><!-- 0.2% mystic turban -->
 		<item id="2155" chance="300"/><!-- 0.1% green gem -->

@@ -32,12 +32,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2389" chance="40000"/><!-- 40% spear -->
 				<item id="2512" chance="30000"/><!-- 30% wooden shield -->
 				<item id="2384" chance="30000"/><!-- 30% rapier -->
 				<item id="2382" chance="18000"/><!-- 18% club -->
-			
+			</inside>
 		</item>
 		<item id="2245" chance="16000"/><!-- 16% twigs -->
 		<item id="2651" chance="24000"/><!-- 24% coat -->

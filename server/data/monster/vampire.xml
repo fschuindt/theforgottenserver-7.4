@@ -43,13 +43,13 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2534" chance="300"/><!-- 0.1% vampire shield -->
 				<item id="2396" chance="600"/><!-- 0.6% ice rapier -->
 				<item id="2412" chance="30000"/><!-- 30% katana -->
 				<item id="2383" chance="2000"/><!-- 2% spike sword -->
 				<item id="2172" chance="300"/><!-- 0.2% bronze amulet -->
-			
+			</inside>
 		</item>
 		<item id="2649" chance="16000"/><!-- 16% leather legs -->
 		<item id="2479" chance="800"/><!-- 0.8% strange helmet -->

@@ -58,11 +58,11 @@
 	<item id="2476" chance="49000"/><!-- 49% 2476 knight armor -->
 	<item id="2171" chance="31000"/><!-- 31% 2171 platinum amulet -->
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 			<item id="2169" chance="26000"/><!-- 26% 2169 time ring -->
 			<item id="2165" chance="28000"/><!-- 28% 2165 stealth ring -->
 			<item id="2167" chance="46000"/><!-- 46% 2167 energy ring -->
-			
+			</inside>
 		</item>
 </loot>
 </monster>

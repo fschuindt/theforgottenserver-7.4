@@ -69,11 +69,11 @@
 		<item id="2178" chance="1000"/><!-- 1% 2178 mind stone -->
 		<item id="2193" chance="1000"/><!-- 1% 2193 ankh -->
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2167" chance="5000"/><!-- 5% 2167 energy ring -->
 				<item id="2436" chance="500"/><!-- 0,5% 2436 skull staff -->
 				<item id="2446" chance="200"/><!-- 0,2% 2446 pharaoh sword -->
-			
+			</inside>
 		</item>	
 	</loot>
 </monster>

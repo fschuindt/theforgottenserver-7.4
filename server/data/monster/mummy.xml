@@ -42,14 +42,14 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2411" chance="5000"/><!-- 5% poison dagger -->
 				<item id="2406" chance="16000"/><!-- 16% short sword -->
 				<item id="2529" chance="300"/><!-- 0.2% black shield -->
 				<item id="2170" chance="300"/><!-- 0.1% silver amulet -->
 				<item id="2161" chance="10000"/><!-- 10% strange talisman -->
 				<item id="2162" chance="32000"/><!-- 32% magic lightwand -->
-			
+			</inside>
 		</item>
 		<item id="2134" chance="8000"/><!-- 8% silver brooch -->
 		<item id="2124" chance="3000"/><!-- 3% crystal ring -->

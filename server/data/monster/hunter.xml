@@ -34,11 +34,11 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2050" chance="10000"/><!-- 10% torch -->
 				<item id="2456" chance="60000"/><!-- 60% bow -->
 				<item id="2201" chance="6000"/><!-- 6% dragon necklace -->
-			
+			</inside>
 		</item>
 		<item id="2465" chance="10000"/><!-- 10% brass armor -->
 		<item id="2649" chance="28000"/><!-- 28% leather legs -->

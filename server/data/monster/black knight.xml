@@ -43,12 +43,14 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-            <item id="2389" chance="60000" countmax="3"/><!-- 3 60% spear -->
-            <item id="2381" chance="26000"/><!-- 26% halberd -->
-            <item id="2417" chance="14000"/><!-- 14% battle hammer -->
-            <item id="2414" chance="600"/><!-- 0.6% dragon lance -->
-            <item id="2430" chance="5000"/><!-- 5% knight axe -->
-            <item id="2377" chance="20000"/><!-- 20% two handed sword -->
+			<inside>
+				<item id="2389" chance="60000" countmax="3"/><!-- 3 60% spear -->
+				<item id="2381" chance="26000"/><!-- 26% halberd -->
+				<item id="2417" chance="14000"/><!-- 14% battle hammer -->
+				<item id="2414" chance="600"/><!-- 0.6% dragon lance -->
+				<item id="2430" chance="5000"/><!-- 5% knight axe -->
+				<item id="2377" chance="20000"/><!-- 20% two handed sword -->
+			</inside>
 		</item>
 		<item id="2476" chance="2000"/><!-- 2% knight armor -->
 		<item id="2489" chance="4000"/><!-- 4% dark armor -->

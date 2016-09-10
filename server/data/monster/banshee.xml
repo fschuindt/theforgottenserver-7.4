@@ -50,12 +50,14 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-            <item id="2047" chance="70000"/><!-- 70% candlestick -->
-            <item id="2411" chance="3000"/><!-- 3% poison dagger -->
-            <item id="2175" chance="1000"/><!-- 1% spellbook -->
-            <item id="2197" chance="1600"/><!-- 1.6% stone skin amulet -->
-            <item id="2170" chance="18000"/><!-- 18% silver amulet -->
-            <item id="2214" chance="1600"/><!-- 1.6% ring of healing -->
+			<inside>
+				<item id="2047" chance="70000"/><!-- 70% candlestick -->
+				<item id="2411" chance="3000"/><!-- 3% poison dagger -->
+				<item id="2175" chance="1000"/><!-- 1% spellbook -->
+				<item id="2197" chance="1600"/><!-- 1.6% stone skin amulet -->
+				<item id="2170" chance="18000"/><!-- 18% silver amulet -->
+				<item id="2214" chance="1600"/><!-- 1.6% ring of healing -->
+			</inside>
 		</item>
 		<item id="2656" chance="1200"/><!-- 1.2% blue robe -->
 		<item id="2655" chance="300"/><!-- 0.1% red robe -->

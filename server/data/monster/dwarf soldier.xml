@@ -35,12 +35,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2378" chance="5000"/><!-- 5% battle axe -->
 				<item id="2525" chance="10000"/><!-- 10% dwarven shield -->
 				<item id="2455" chance="8000"/><!-- 8% crossbow -->
 				<item id="2208" chance="300"/><!-- 0.1% axe ring -->
-			
+			</inside>
 		</item>
 		<item id="2464" chance="18000"/><!-- 18% chain armor -->
 		<item id="2481" chance="24000"/><!-- 24% soldier helmet -->

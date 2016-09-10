@@ -38,11 +38,11 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			
+			<inside>
 				<item id="2377" chance="4000"/><!-- 4% two handed sword -->
 				<item id="2541" chance="2000"/><!-- 2% bone shield -->
 				<item id="2450" chance="2000"/><!-- 2% bone sword -->
-			
+			</inside>
 		</item>
 		<item id="2459" chance="4000"/><!-- 4% iron helmet -->
 		<item id="2230" chance="50000"/><!-- 50% bone -->

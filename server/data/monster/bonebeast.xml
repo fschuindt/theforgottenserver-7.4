@@ -49,8 +49,10 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-            <item id="2449" chance="10000"/><!-- 10% bone club -->
-            <item id="2541" chance="4000"/><!-- 4% bone shield -->
+			<inside>
+				<item id="2449" chance="10000"/><!-- 10% bone club -->
+				<item id="2541" chance="4000"/><!-- 4% bone shield -->
+			</inside>
 		</item>
 		<item id="2463" chance="16000"/><!-- 16% plate armor -->
 		<item id="2231" chance="20000"/><!-- 20% big bone -->
