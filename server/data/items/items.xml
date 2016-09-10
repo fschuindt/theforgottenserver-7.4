@@ -2337,10 +2337,7 @@
 		<attribute key="weight" value="200" />
 	</item>
 	<item id="2175" article="a" name="spellbook">
-		<attribute key="description" value="It shows your spells and can also shield against attacks when worn." />
 		<attribute key="weight" value="1800" />
-		<attribute key="defense" value="14" />
-		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="2176" article="an" name="orb">
 		<attribute key="weight" value="800" />
@@ -2947,7 +2944,6 @@
 		<attribute key="description" value="You have a vague feeling that it looks somewhat silly." />
 		<attribute key="weight" value="700" />
 		<attribute key="armor" value="3" />
-		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2324" article="a" name="broom">
@@ -3605,6 +3601,7 @@
 		<attribute key="attack" value="49"/>
 		<attribute key="weaponType" value="axe"/>
 		<attribute key="slotType" value="two-handed"/>
+        <attribute key="description" value="A power weapon made only for royal guards of the pharaoh."/>
 	</item>
 	<item id="2444" article="a" name="hammer of wrath">
 		<attribute key="description" value="A giant is said to have forged this hammer to take revenge for the death of his brother."/>
@@ -3777,6 +3774,7 @@
 		<attribute key="weight" value="8500"/>
 		<attribute key="armor" value="17"/>
 		<attribute key="slotType" value="body"/>
+        <attribute key="description" value="An enchanted gem glows on the plate armor."/>
 	</item>
 	<item id="2473" article="a" name="viking helmet">
 		<attribute key="weight" value="3900"/>
