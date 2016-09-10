@@ -56,11 +56,11 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2050" chance="11000"/><!-- 11% torch -->
 				<item id="2411" chance="2000"/><!-- 2% poison dagger -->
 				<item id="2174" chance="1000"/><!-- 1% strange symbol -->
-			</inside>
+			
 		</item>
 		<item id="2467" chance="20000"/><!-- 20% leather armor -->
 		<item id="3967" chance="1000"/><!-- 1% tribal mask -->

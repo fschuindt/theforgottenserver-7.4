@@ -35,12 +35,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2050" chance="50000"/><!-- 50% torch -->
 				<item id="2515" chance="2000"/><!-- 2% battle shield -->
 				<item id="2513" chance="300"/><!-- 0.1% guardian shield -->
 				<item id="2417" chance="6000"/><!-- 6% battle hammer -->
-			</inside>
+			
 		</item>
 		<item id="2459" chance="4000"/><!-- 4% iron helmet -->
 		<item id="2194" chance="600"/><!-- 0.6% mysterious fetiche -->

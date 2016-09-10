@@ -45,12 +45,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2189" chance="1000"/><!-- 1% wand of cosmic energy -->
 				<item id="2404" chance="8000"/><!-- 8% combat knife -->
 				<item id="2403" chance="20000"/><!-- 20% knife -->
 				<item id="2050" chance="60000"/><!-- 60% torch -->
-			</inside>
+			
 		</item>
 		<item id="2649" chance="30000"/><!-- 30% leather legs -->
 		<item id="2648" chance="4000"/><!-- 4% chain legs -->

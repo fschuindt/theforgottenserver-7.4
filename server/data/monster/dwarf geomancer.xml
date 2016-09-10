@@ -43,12 +43,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2162" chance="24000"/><!-- 24% magic lightwand -->
 				<item id="2423" chance="2000"/><!-- 2% clerical mace -->
 				<item id="2175" chance="800"/><!-- 0.8% spellbook -->
 				<item id="2213" chance="600"/><!-- 0.6% dwarven ring -->
-			</inside>
+			
 		</item>
 		<item id="1987" chance="50000"/><!-- 50% bag -->
 		<item id="2481" chance="16000"/><!-- 16% soldier helmet -->

@@ -35,13 +35,13 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2512" chance="30000"/><!-- 30% wooden shield -->
 				<item id="2389" chance="40000"/><!-- 40% spear -->
 				<item id="2380" chance="36000"/><!-- 36% hand axe -->
 				<item id="2448" chance="10000"/><!-- 10% studded club -->
 				<item id="2170" chance="300"/><!-- 0.1% silver amulet -->
-			</inside>
+			
 		</item>
 		<item id="2461" chance="20000"/><!-- 20% leather helmet -->
 		<item id="2643" chance="20000"/><!-- 20% leather boots -->

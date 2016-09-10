@@ -39,10 +39,10 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2397" chance="12000"/><!-- 12% longsword -->
 				<item id="2456" chance="8000"/><!-- 8% bow -->
-			</inside>
+			
 		</item>
 		<item id="2484" chance="24000"/><!-- 24% studded armor -->
 		<item id="2482" chance="16000"/><!-- 16% studded helmet -->

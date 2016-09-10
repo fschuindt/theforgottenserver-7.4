@@ -56,13 +56,13 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2528" chance="800"/><!-- 0.8% tower shield -->
 				<item id="2392" chance="600"/><!-- 0.6% fire sword -->
 				<item id="2182" chance="2000"/><!-- 2% snakebite rod -->
 				<item id="2168" chance="6000"/><!-- 6% life ring -->
 				<item id="2167" chance="6000"/><!-- 6% energy ring -->
-			</inside>
+			
 		</item>
 		<item id="2492" chance="300"/><!-- 0.2% dragon scale mail -->
 		<item id="2479" chance="1200"/><!-- 1.2% strange helmet -->

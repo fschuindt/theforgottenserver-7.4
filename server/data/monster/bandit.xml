@@ -32,12 +32,10 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="2000">
-			<inside>
-				<item id="2511" chance="34000"/><!-- 34% brass shield -->
-				<item id="2391" chance="300"/><!-- 0.1% war hammer -->
-				<item id="2386" chance="60000"/><!-- 60% axe -->
-				<item id="2398" chance="20000"/><!-- 20% mace -->
-			</inside>
+            <item id="2511" chance="34000"/><!-- 34% brass shield -->
+            <item id="2391" chance="300"/><!-- 0.1% war hammer -->
+            <item id="2386" chance="60000"/><!-- 60% axe -->
+            <item id="2398" chance="20000"/><!-- 20% mace -->
 		</item>
 		<item id="2465" chance="5000"/><!-- 5% brass armor -->
 		<item id="2458" chance="10000"/><!-- 10% chain helmet -->

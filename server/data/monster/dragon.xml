@@ -46,19 +46,17 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
-				<item id="2455" chance="20000"/><!-- 20% crossbow -->
-				<item id="2397" chance="8000"/><!-- 8% longsword -->
-				<item id="2413" chance="4000"/><!-- 4% broadsword -->
-				<item id="2187" chance="2000"/><!-- 2% wand of inferno -->
-				<item id="2387" chance="1000"/><!-- 2% double axe -->
-				<item id="2434" chance="1000"/><!-- 1% dragon hammer -->
-				<item id="2409" chance="1000"/><!-- 1% serpent sword -->
-				<item id="2406" chance="50000"/><!-- 50% short sword -->
-				<item id="2398" chance="40000"/><!-- 40% mace -->
-				<item id="2509" chance="16000"/><!-- 30% steel shield -->
-				<item id="2516" chance="600"/><!-- 0.6% dragon shield -->
-			</inside>
+            <item id="2455" chance="20000"/><!-- 20% crossbow -->
+            <item id="2397" chance="8000"/><!-- 8% longsword -->
+            <item id="2413" chance="4000"/><!-- 4% broadsword -->
+            <item id="2187" chance="2000"/><!-- 2% wand of inferno -->
+            <item id="2387" chance="1000"/><!-- 2% double axe -->
+            <item id="2434" chance="1000"/><!-- 1% dragon hammer -->
+            <item id="2409" chance="1000"/><!-- 1% serpent sword -->
+            <item id="2406" chance="50000"/><!-- 50% short sword -->
+            <item id="2398" chance="40000"/><!-- 40% mace -->
+            <item id="2509" chance="16000"/><!-- 30% steel shield -->
+            <item id="2516" chance="600"/><!-- 0.6% dragon shield -->
 		</item>
 		<item id="2177" chance="300"/><!-- 0.1% life crystal -->
 		<item id="2457" chance="6000"/><!-- 6% steel helmet -->

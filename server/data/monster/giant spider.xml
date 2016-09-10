@@ -41,9 +41,9 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2169" chance="1400"/><!-- 1.4% time ring -->
-			</inside>
+			
 		</item>
 		<item id="2171" chance="300"/><!-- 0.1% platinum amulet -->
 		<item id="2463" chance="20000"/><!-- 20% plate armor -->

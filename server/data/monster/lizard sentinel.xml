@@ -36,12 +36,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2389" chance="20000" countmax="3"/><!-- 3 20% spear -->
 				<item id="2425" chance="2400"/><!-- 2.4% obsidian lance -->
 				<item id="2381" chance="1000"/><!-- 1% halberd -->
 				<item id="3974" chance="600"/><!-- 0.6% sentinel shield -->
-			</inside>
+			
 		</item>
 		<item id="2464" chance="18000"/><!-- 18% chain armor -->
 		<item id="2483" chance="16000"/><!-- 16% scale armor -->

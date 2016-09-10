@@ -61,12 +61,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2401" chance="60000"/><!-- 60% staff -->
 				<item id="2535" chance="300"/><!-- 0.2% castle shield -->
 				<item id="2175" chance="20000"/><!-- 20% spellbook -->
 				<item id="2214" chance="2000"/><!-- 2% ring of healing -->
-			</inside>
+			
 		</item>
 		<item id="2656" chance="300"/><!-- 0.1% blue robe -->
 		<item id="2171" chance="300"/><!-- 0.1% platinum amulet -->

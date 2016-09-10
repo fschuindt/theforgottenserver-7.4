@@ -35,9 +35,9 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			
 				<item id="2455" chance="20000"/><!-- 20% crossbow -->
-			</inside>
+			
 		</item>
 		<item id="2649" chance="10000"/><!-- 10% leather legs -->
 		<item id="2465" chance="4000"/><!-- 4% brass armor -->
