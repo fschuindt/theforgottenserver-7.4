@@ -24,7 +24,7 @@
 	<defenses armor="10" defense="20">
 	</defenses>
 	<elements>
-		<element physicalPercent="100"/><element deathPercent="100"/>
+		<element physicalPercent="100"/>
 		<element earthPercent="100"/>
 	</elements>
 	<immunities>

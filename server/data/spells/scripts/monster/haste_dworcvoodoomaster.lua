@@ -1,12 +1,12 @@
-local combat = Combat()
-combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_MAGIC_GREEN)
-combat:setParameter(COMBAT_PARAM_AGGRESSIVE, 0)
+local combat = createCombatObject()
+setCombatParam(combat, COMBAT_PARAM_EFFECT, CONST_ME_MAGIC_GREEN)
+setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, 0)
 
-local condition = Condition(CONDITION_HASTE)
-condition:setParameter(CONDITION_PARAM_TICKS, 4*1000)
-condition:setFormula(0, 320, 0, 400)
-combat:setCondition(condition)
+local condition = createConditionObject(CONDITION_HASTE)
+setConditionParam(condition, CONDITION_PARAM_TICKS, 4*1000)
+setConditionFormula(condition, 0, 320, 0, 400)
+setCombatCondition(combat, condition)
 
-function onCastSpell(creature, var)
-	return combat:execute(creature, var)
+function onCastSpell(cid, var)
+	return doCombat(cid, combat, var)
 end

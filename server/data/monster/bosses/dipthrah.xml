@@ -40,7 +40,7 @@
 		<summon name="priestess" interval="2000" chance="15" max="3"/>
 	</summons>
 	<elements>
-		<element physicalPercent="100"/><element deathPercent="100"/>
+		<element physicalPercent="100"/>
 		<element earthPercent="100"/>
 	</elements>
 	<immunities>
