@@ -1589,9 +1589,9 @@ Item* Tile::getUseItem() const
 		}
 	}
 
-	Item* item = items->getTopTopItem();
+	Item* item = items->getTopDownItem();
 	if (!item) {
-		item = items->getTopDownItem();
+		item = items->getTopTopItem();
 	}
 	return item;
 }
