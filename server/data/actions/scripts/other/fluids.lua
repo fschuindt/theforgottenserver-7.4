@@ -37,7 +37,7 @@ function onUse(player, item, fromPosition, target, toPosition)
 			elseif v == 4 then
 				player:addCondition(poison)
 			elseif v == 7 then
-				player:addMana(math.random(50, 150))
+				player:addMana(math.random(20, 75))
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			elseif v == 10 then
 				player:addHealth(60)
