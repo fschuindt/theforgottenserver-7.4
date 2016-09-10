@@ -1204,93 +1204,65 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 		}
 	}
 	else {
-		bool found = true;
-
-		if (it.abilities) {
-			if (it.abilities->speed > 0) {
-				//s << " (speed " << std::showpos << (it.abilities->speed / 2) << std::noshowpos << ')';
-			}
-			else if (hasBitSet(CONDITION_DRUNK, it.abilities->conditionSuppressions)) {
-				//s << " (hard drinking)";
-			}
-			else if (it.abilities->invisible) {
-				//s << " (invisibility)";
-			}
-			else if (it.abilities->regeneration) {
-				//s << " (faster regeneration)";
-			}
-			else if (it.abilities->manaShield) {
-				//s << " (mana shield)";
+		if (it.isKey()) {
+			s << " (Key:" << (item ? item->getActionId() : 0) << ')';
+		}
+		else if (it.isFluidContainer()) {
+			if (subType > 0) {
+				const std::string& itemName = items[subType].name;
+				s << " of " << (!itemName.empty() ? itemName : "unknown");
 			}
 			else {
-				found = false;
+				s << ". It is empty";
 			}
 		}
-		else {
-			found = false;
+		else if (it.isSplash()) {
+			s << " of ";
+
+			if (subType > 0 && !items[subType].name.empty()) {
+				s << items[subType].name;
+			}
+			else {
+				s << "unknown";
+			}
 		}
+		else if (it.allowDistRead && (it.id < 7369 || it.id > 7371)) {
+			s << '.' << std::endl;
 
-		if (!found) {
-			if (it.isKey()) {
-				s << " (Key:" << (item ? item->getActionId() : 0) << ')';
-			}
-			else if (it.isFluidContainer()) {
-				if (subType > 0) {
-					const std::string& itemName = items[subType].name;
-					s << " of " << (!itemName.empty() ? itemName : "unknown");
-				}
-				else {
-					s << ". It is empty";
-				}
-			}
-			else if (it.isSplash()) {
-				s << " of ";
-
-				if (subType > 0 && !items[subType].name.empty()) {
-					s << items[subType].name;
-				}
-				else {
-					s << "unknown";
-				}
-			}
-			else if (it.allowDistRead && (it.id < 7369 || it.id > 7371)) {
-				s << '.' << std::endl;
-
-				if (lookDistance <= 4) {
-					if (item) {
-						text = &item->getText();
-						if (!text->empty()) {
-							const std::string& writer = item->getWriter();
-							if (!writer.empty()) {
-								s << writer << " wrote";
-								time_t date = item->getDate();
-								if (date != 0) {
-									s << " on " << formatDateShort(date);
-								}
-								s << ": ";
+			if (lookDistance <= 4) {
+				if (item) {
+					text = &item->getText();
+					if (!text->empty()) {
+						const std::string& writer = item->getWriter();
+						if (!writer.empty()) {
+							s << writer << " wrote";
+							time_t date = item->getDate();
+							if (date != 0) {
+								s << " on " << formatDateShort(date);
 							}
-							else {
-								s << "You read: ";
-							}
-							s << *text;
+							s << ": ";
 						}
 						else {
-							s << "Nothing is written on it";
+							s << "You read: ";
 						}
+						s << *text;
 					}
 					else {
 						s << "Nothing is written on it";
 					}
 				}
 				else {
-					s << "You are too far away to read it";
+					s << "Nothing is written on it";
 				}
 			}
-			else if (it.levelDoor != 0 && item) {
-				uint16_t actionId = item->getActionId();
-				if (actionId >= it.levelDoor) {
-					s << " for level " << (actionId - it.levelDoor);
-				}
+			else {
+				s << "You are too far away to read it";
+			}
+		}
+		else if (it.levelDoor != 0 && item) {
+			uint16_t actionId = item->getActionId();
+			if (actionId >= it.levelDoor) {
+				s << " for level " << (actionId - it.levelDoor);
 			}
 		}
 	}
