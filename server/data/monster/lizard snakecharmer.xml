@@ -49,8 +49,8 @@
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
 			<!--inside-->
-				<item id="2182" chance="300"/><!-- 0.1% snakebite rod -->
-				<item id="2181" chance="2000"/><!-- 2% quagmire rod -->
+				<!--<item id="2182" chance="300"/> 0.1% snakebite rod -->
+				<!--<item id="2181" chance="2000"/> 2% quagmire rod -->
 				<item id="2168" chance="300"/><!-- 0.2% life ring -->
 			<!--/inside-->
 		</item>

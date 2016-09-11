@@ -50,7 +50,7 @@
 				<item id="2455" chance="20000"/><!-- 20% crossbow -->
 				<item id="2397" chance="8000"/><!-- 8% longsword -->
 				<item id="2413" chance="4000"/><!-- 4% broadsword -->
-				<item id="2187" chance="2000"/><!-- 2% wand of inferno -->
+				<!--<item id="2187" chance="2000"/> 2% wand of inferno -->
 				<item id="2387" chance="1000"/><!-- 2% double axe -->
 				<item id="2434" chance="1000"/><!-- 1% dragon hammer -->
 				<item id="2409" chance="1000"/><!-- 1% serpent sword -->

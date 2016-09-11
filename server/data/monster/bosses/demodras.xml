@@ -73,9 +73,9 @@
 			<item id="2409" chance="20000"/><!-- 2409 serpent sword -->
 			<item id="2434" chance="20000"/><!-- 2434 dragon hammer -->
 			<item id="2413" chance="20000"/><!-- 2413 broad sword -->
-			<item id="2187" chance="20000"/><!-- 2187 wand of inferno -->
+			<!--<item id="2187" chance="20000"/> 2187 wand of inferno -->
 			<item id="2387" chance="20000"/><!-- 2387 double axe -->
-			<item id="2191" chance="20000"/><!-- 2191 wand of dragonbreath -->
+			<!--<item id="2191" chance="20000"/> 2191 wand of dragonbreath -->
 			<item id="2392" chance="2000"/><!-- 2% fire sword -->
 			<item id="2528" chance="600"/><!-- tower shield -->
 			<!--/inside-->

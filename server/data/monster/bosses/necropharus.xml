@@ -64,8 +64,8 @@
 			<item id="2423" chance="58000"/><!-- 58% 2423 clerical mace -->
 			<item id="2449" chance="37000"/><!-- 37% 2449 bone club -->
 			<item id="2541" chance="11000"/><!-- 11% 2541 bone shield -->
-			<item id="2186" chance="16000"/><!-- 16% 2186 moonlight rod -->
-			<item id="2182" chance="34000"/><!-- 2182 snakebite rod -->
+			<!--<item id="2186" chance="16000"/> 16% 2186 moonlight rod -->
+			<!--<item id="2182" chance="34000"/> 2182 snakebite rod -->
 			<!--/inside-->
 		</item>
 </loot>

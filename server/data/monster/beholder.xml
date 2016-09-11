@@ -66,7 +66,7 @@
 				<item id="2518" chance="300"/><!-- 0.1% beholder shield -->
 				<item id="2394" chance="14000"/><!-- 14% morning star -->
 				<item id="2512" chance="6000"/><!-- 6% wooden shield -->
-				<item id="2181" chance="1000"/><!-- 1% quagmire rod -->
+				<!--<item id="2181" chance="1000"/> 1% quagmire rod -->
 				<item id="2175" chance="10000"/><!-- 10% spellbook -->
 			<!--/inside-->
 		</item>

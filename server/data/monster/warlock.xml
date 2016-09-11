@@ -66,7 +66,7 @@
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
 			<!--inside-->
-				<item id="2185" chance="4000"/><!-- 4% 2185 volcanic rod -->
+				<!-- <item id="2185" chance="4000"/> 4% 2185 volcanic rod -->
 				<item id="2411" chance="20000"/><!-- 20% poison dagger -->
 				<item id="2436" chance="14000"/><!-- 14% skull staff -->
 				<item id="2197" chance="1000"/><!-- 1% stone skin amulet -->

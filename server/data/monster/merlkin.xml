@@ -51,7 +51,7 @@
 		<item id="1987" chance="100000"><!-- bag -->
 			<!--inside-->
 				<item id="2162" chance="10000"/><!-- 10% magic lightwand -->
-				<item id="2188" chance="2000"/><!-- 2% wand of plague -->
+				<!--<item id="2188" chance="2000"/> 2% wand of plague -->
 				<item id="3966" chance="300"/><!-- 0.1% banana staff -->
 			<!--/inside-->
 		</item>
