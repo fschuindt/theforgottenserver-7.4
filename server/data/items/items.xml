@@ -2395,7 +2395,6 @@
 		<attribute key="weight" value="750" />
 		<attribute key="slotType" value="feet" />
 		<attribute key="speed" value="40" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2196" article="a" name="broken amulet">
 		<attribute key="weight" value="420" />
