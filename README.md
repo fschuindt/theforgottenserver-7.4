@@ -1,7 +1,7 @@
-forgottenserver [![Build Status](https://travis-ci.org/babymannen/theforgottenserver-7.4.svg?branch=master)](https://travis-ci.org/babymannen/theforgottenserver-7.4)
+forgottenserver 7.4
 ===============
 
-The Forgotten Server is a free and open-source MMORPG server emulator written in C++. It is a fork of the [OpenTibia Server](https://github.com/opentibia/server) project. To connect to the server, you can use [OTClient](https://github.com/edubart/otclient).
+Based on a downgraded branch by @ninjalulz, which according to the file 'definition.h' is TFS 1.2. The original [Forgotten Server](https://github.com/otland/forgottenserver/) is a free and open-source MMORPG server emulator written in C++. It is a fork of the [OpenTibia Server](https://github.com/opentibia/server) project. Custom client included (7.72 client with 7.4 dat/spr/pic).
 
 ### Getting Started 
 
@@ -10,7 +10,7 @@ The Forgotten Server is a free and open-source MMORPG server emulator written in
 
 ### Support
 
-If you need help, please visit the [support forum on OTLand](https://otland.net/forums/support.16/). Our issue tracker is not a support forum.
+If you need help, please visit the [our OTLand forum thread](https://otland.net/threads/7-4-tfs-1-2.245320/).
 
 ### Issues
 
