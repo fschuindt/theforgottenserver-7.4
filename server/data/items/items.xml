@@ -3549,7 +3549,7 @@
 		<attribute key="attack" value="36"/>
 		<attribute key="weaponType" value="club"/>
 	</item>
-	<item id="2437" article="a" name="light mace">
+	<item id="2437" article="a" name="golden mace">
 		<attribute key="weight" value="4100"/>
 		<attribute key="defense" value="9"/>
 		<attribute key="attack" value="14"/>
