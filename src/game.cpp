@@ -3417,6 +3417,7 @@ bool Game::combatChangeHealth(Creature* attacker, Creature* target, CombatDamage
 				return combatChangeHealth(attacker, target, damage);
 			}
 		}
+		target->gainHealth(attacker, damage.primary.value);
 	} else {
 		if (!target->isAttackable()) {
 			if (!target->isInGhostMode()) {
