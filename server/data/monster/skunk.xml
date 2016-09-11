@@ -33,6 +33,6 @@
 	</voices>
 	<loot>
 		<item id="2666" chance="2000" countmax="2"/><!-- 2 2% meat -->
-		<item id="3976" chance="10000"/><!-- 10% worm -->
+		<!--<item id="3976" chance="10000"/> 10% worm -->
 	</loot>
 </monster>

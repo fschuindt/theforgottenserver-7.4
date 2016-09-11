@@ -54,6 +54,7 @@
 				<item id="2436" chance="300"/><!-- 0.1% skull staff -->
 				<item id="2423" chance="2000"/><!-- 2% clerical mace -->
 				<item id="2406" chance="30000"/><!-- 30% short sword -->
+				<item id="2186" chance="300"/><!-- 0.3% conjurer wand -->
 			<!--/inside-->
 		</item>
 		<item id="2483" chance="20000"/><!-- 20% scale armor -->

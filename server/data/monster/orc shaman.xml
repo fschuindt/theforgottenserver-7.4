@@ -54,6 +54,8 @@
 				<item id="2401" chance="14000"/><!-- 14% staff -->
 				<!--<item id="2188" chance="2000"/> 2% wand of plague -->
 				<item id="1973" chance="9000"/><!-- 9% grey small book -->
+				<item id="2189" chance="300"/><!-- 0.3% blue spell wand -->
+				<item id="2190" chance="300"/><!-- 0.3% yellow spell wand -->
 			<!--/inside-->
 		</item>
 		<item id="2464" chance="18000"/><!-- 18% chain armor -->

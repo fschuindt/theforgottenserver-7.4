@@ -54,7 +54,7 @@
 		<item id="2134" chance="8000"/><!-- 8% silver brooch -->
 		<item id="2124" chance="3000"/><!-- 3% crystal ring -->
 		<item id="2144" chance="2000"/><!-- 2% black pearl -->
-		<item id="3976" chance="70000" countmax="3"/><!-- 3 70% worm -->
+		<!--<item id="3976" chance="70000" countmax="3"/> 3 70% worm -->
 		<item id="2148" chance="80000" countmax="80"/><!-- 80 80% gold coin -->
 	</loot>
 </monster>
