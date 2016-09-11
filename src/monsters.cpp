@@ -1027,7 +1027,7 @@ bool Monsters::loadMonster(const std::string& file, const std::string& monsterNa
 		for (auto lootNode : node.children()) {
 			LootBlock lootBlock;
 			if (loadLootItem(lootNode, lootBlock)) {
-				mType->lootItems.push_back(lootBlock);
+				mType->lootItems.emplace_back(std::move(lootBlock));
 			} else {
 				std::cout << "[Warning - Monsters::loadMonster] Cant load loot. " << file << std::endl;
 			}
