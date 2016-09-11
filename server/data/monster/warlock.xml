@@ -65,14 +65,14 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2185" chance="4000"/><!-- 4% 2185 volcanic rod -->
 				<item id="2411" chance="20000"/><!-- 20% poison dagger -->
 				<item id="2436" chance="14000"/><!-- 14% skull staff -->
 				<item id="2197" chance="1000"/><!-- 1% stone skin amulet -->
 				<item id="2167" chance="6000"/><!-- 6% energy ring -->
 				<item id="2047" chance="30000"/><!-- 30% candlestick -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2466" chance="600"/><!-- 0.6% golden armor -->
 		<item id="2656" chance="4000"/><!-- 4% blue robe -->

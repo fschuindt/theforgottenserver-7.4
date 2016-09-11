@@ -77,13 +77,13 @@
 		<item id="2175" chance="16000"/><!-- 16% spellbook -->
 		<item id="3972" chance="3000"/><!-- 3% 3972 beholder helmet -->
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2377" chance="32000"/><!-- 32% two-handed sword -->
 				<item id="2397" chance="21000"/><!-- 21% longsword -->
 				<item id="2509" chance="47000"/><!-- 47% steel shield -->
 				<item id="2518" chance="10000"/><!-- 10% beholder shield -->
 				<item id="2394" chance="58000"/><!-- 58% morning star -->
-			</inside>
+			<!--/inside-->
 		</item>
 	</loot>
 </monster>

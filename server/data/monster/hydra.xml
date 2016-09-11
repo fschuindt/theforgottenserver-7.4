@@ -46,11 +46,11 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2536" chance="300"/><!-- 0.1% medusa shield -->
 				<item id="2197" chance="1600"/><!-- 1.6% stone skin amulet -->
 				<item id="2214" chance="2400"/><!-- 2.4% ring of healing -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2476" chance="2000"/><!-- 2% knight armor -->
 		<item id="2475" chance="2000"/><!-- 2% warrior helmet -->

@@ -30,12 +30,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2530" chance="2000"/><!-- 2% copper shield -->
 				<item id="2376" chance="6000"/><!-- 6% sword -->
 				<item id="2398" chance="9000"/><!-- 9% mace -->
 				<item id="2412" chance="600"/><!-- 0.6% katana -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2480" chance="3000"/><!-- 3% legion helmet -->
 		<item id="3976" chance="50000" countmax="5"/><!-- 5 50% worm -->

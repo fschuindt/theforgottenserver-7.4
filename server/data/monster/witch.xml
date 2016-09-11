@@ -42,12 +42,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2405" chance="80000"/><!-- 80% sickle -->
 				<item id="2402" chance="1000"/><!-- 1% silver dagger -->
 				<item id="2185" chance="2000"/><!-- 2% volcanic rod -->
 				<item id="2199" chance="5000"/><!-- 5% garlic necklace -->
-			</inside>
+			<!--/inside-->
 		</item>	
 		<item id="2643" chance="50000"/><!-- 50% leather boots -->
 		<item id="2654" chance="50000"/><!-- 50% cape -->

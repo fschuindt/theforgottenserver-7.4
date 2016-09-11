@@ -69,9 +69,9 @@
 		<item id="2546" countmax="15" chance1="45000" chancemax="0"/><!-- 1-15 45% 2546 burst arrow -->
 		<item id="2547" countmax="4" chance1="17000" chancemax="0"/><!-- 1-4 17% 2547 power bolt -->
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2165" chance="5000"/><!-- 5% 2165 stealth ring -->
-			</inside>
+			<!--/inside-->
 		</item>
 	</loot>
 </monster>

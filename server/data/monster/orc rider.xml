@@ -33,12 +33,12 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2428" chance="30000"/><!-- 30% orcish axe -->
 				<item id="2425" chance="2000"/><!-- 2% obsidian lance -->
 				<item id="2513" chance="2000"/><!-- 2% battle shield -->
 				<item id="2050" chance="16000"/><!-- 16% torch -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2129" chance="20000"/><!-- 20% wolf tooth chain -->
 		<item id="2482" chance="30000"/><!-- 30% studded helmet -->

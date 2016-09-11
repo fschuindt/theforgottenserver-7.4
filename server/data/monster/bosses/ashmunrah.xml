@@ -76,10 +76,10 @@
 		<item id="2487" chance="500"/><!-- 0,5% 2487 crown armor -->
 		<item id="2140" chance="200"/><!-- 0,2% 2140 holy scarab -->
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2164" chance="5000"/><!-- 5% 2164 might ring -->
 				<item id="2444" chance="200"/><!-- 0,2% 2444 hammer of wrath -->
-			</inside>
+			<!--/inside-->
 		</item>	
 	</loot>
 </monster>

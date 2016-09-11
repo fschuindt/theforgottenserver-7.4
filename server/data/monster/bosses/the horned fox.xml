@@ -56,11 +56,11 @@
 	<item id="2648" chance="14000"/><!-- 14% 2648 chain legs -->
 	<item id="2502" chance="12000"/><!-- 12% 2502 dwarven helmet -->
 	<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 			<item id="2580" chance="8000"/><!-- 8% 2580 fishing rod -->
 			<item id="2387" chance="4000"/><!-- 4% 2387 double axe -->
 			<item id="2513" chance="15000"/><!-- 15% 2513 battle shield -->
-			</inside>
+			<!--/inside-->
 		</item>
 </loot>
 </monster>

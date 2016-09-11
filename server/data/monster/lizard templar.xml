@@ -32,13 +32,13 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2406" chance="20000"/><!-- 20% short sword -->
 				<item id="2376" chance="10000"/><!-- 10% sword -->
 				<item id="2394" chance="1400"/><!-- 1.4% morning star -->
 				<item id="3963" chance="1000"/><!-- 1% templar scytheblade -->
 				<item id="3975" chance="300"/><!-- 0.1% salamander shield -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2457" chance="4000"/><!-- 4% steel helmet -->
 		<item id="2463" chance="2000"/><!-- 2% plate armor -->

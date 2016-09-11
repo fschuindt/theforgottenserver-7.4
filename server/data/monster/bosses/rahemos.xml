@@ -78,10 +78,10 @@
 		<item id="2153" chance="2000"/><!-- 2% 2153 violet gem -->
 		<item id="2176" chance="500"/><!-- 0,5% 2176 orb -->
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2214" chance="4000"/><!-- 4% 2214 ring of healing -->
 				<item id="2447" chance="500"/><!-- 0,5% 2447 twin axe -->
-			</inside>
+			<!--/inside-->
 		</item>
 	</loot>
 </monster>

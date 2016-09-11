@@ -59,14 +59,14 @@
 	<item id="2663" chance="5000"/><!-- 5% 2663 mystic turban -->
 	<item id="2195" chance="5000"/><!-- 5% 2195 boots of haste -->
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 			<item id="2436" chance="42000"/><!-- 42% 2436 skull staff -->
 			<item id="2423" chance="58000"/><!-- 58% 2423 clerical mace -->
 			<item id="2449" chance="37000"/><!-- 37% 2449 bone club -->
 			<item id="2541" chance="11000"/><!-- 11% 2541 bone shield -->
 			<item id="2186" chance="16000"/><!-- 16% 2186 moonlight rod -->
 			<item id="2182" chance="34000"/><!-- 2182 snakebite rod -->
-			</inside>
+			<!--/inside-->
 		</item>
 </loot>
 </monster>

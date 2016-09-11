@@ -50,11 +50,11 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2436" chance="300"/><!-- 0.1% skull staff -->
 				<item id="2423" chance="2000"/><!-- 2% clerical mace -->
 				<item id="2406" chance="30000"/><!-- 30% short sword -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2483" chance="20000"/><!-- 20% scale armor -->
 		<item id="2663" chance="1000"/><!-- 1% mystic turban -->

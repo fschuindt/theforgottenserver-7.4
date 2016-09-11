@@ -39,10 +39,10 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2439" chance="600"/><!-- 0.6% daramanian mace -->
 				<item id="2442" chance="1000"/><!-- 1% heavy machete -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2159" chance="2000" countmax="1"/><!-- 2% scarab coin -->
 		<item id="2159" chance="300" countmax="1"/><!-- 0.1% scarab coin -->

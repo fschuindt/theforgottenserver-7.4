@@ -42,14 +42,14 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2428" chance="30000"/><!-- 30% orcish axe -->
 				<item id="2434" chance="300"/><!-- 0.2% dragon hammer -->
 				<item id="2377" chance="4000"/><!-- 4% two handed sword -->
 				<item id="2419" chance="24000"/><!-- 24% scimitar -->
 				<item id="2200" chance="4000"/><!-- 4% protection amulet -->
 				<item id="2165" chance="300"/><!-- 0.1% stealth ring -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2647" chance="8000"/><!-- 8% plate legs -->
 		<item id="2478" chance="20000"/><!-- 20% brass legs -->

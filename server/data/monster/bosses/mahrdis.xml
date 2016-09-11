@@ -73,11 +73,11 @@
 		<item id="2156" chance="1000"/><!-- 1% 2156 red gem -->
 		<item id="2141" chance="200"/><!-- 0,2% 2141 holy falcon-->
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2168" chance="7000"/><!-- 7% 2168 life ring -->
 				<item id="2432" chance="1000"/><!-- 1% 2432 fire axe -->
 				<item id="2539" chance="200"/><!-- 0,2% 2539 phoenix shield -->
-			</inside>
+			<!--/inside-->
 		</item>	
 	</loot>
 </monster>

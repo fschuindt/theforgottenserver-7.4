@@ -67,9 +67,9 @@
 		<item id="2197" chance="5000"/><!-- 5% 2197 stone skin amulet -->
 		<item id="2645" chance="200"/><!-- 0,2% 2645 steel boots -->
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2430" chance="7000"/><!-- 7% 2430 knight axe -->
-			</inside>
+			<!--/inside-->
 		</item>	
 	</loot>
 </monster>

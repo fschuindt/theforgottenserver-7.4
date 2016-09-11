@@ -33,13 +33,13 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2509" chance="14000"/><!-- 14% steel shield -->
 				<item id="2166" chance="10000"/><!-- 10% power ring -->
 				<item id="2124" chance="300"/><!-- 0.2% crystal ring -->
 				<item id="2395" chance="3000"/><!-- 3% carlin sword -->
 				<item id="2050" chance="11000"/><!-- 11% torch -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2483" chance="10000"/><!-- 10% scale armor -->
 		<item id="2156" chance="300"/><!-- 0.1% red gem -->

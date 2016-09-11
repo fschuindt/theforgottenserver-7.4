@@ -36,10 +36,10 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2510" chance="2000"/><!-- 4% plate shield -->
 				<item id="2169" chance="300"/><!-- 0.1% time ring -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2478" chance="6000"/><!-- 6% brass legs -->
 		<item id="2457" chance="1000"/><!-- 2% steel helmet -->

@@ -69,10 +69,10 @@
 		<item id="2129" chance="4000"/><!-- 2129 wolf tooth chain -->
 		<item id="2652" chance="8000"/><!-- 8% 2652 green tunic -->
 			<item id="1987" chance="100000"><!-- bag -->
-				<inside>
+				<!--inside-->
 				<item id="2166" chance="40000"/><!-- 40% 2166 power ring -->
 				<item id="2401" chance="16000"/><!-- 16% 2401 staff -->
-				</inside>
+				<!--/inside-->
 			</item>
 	</loot>
 </monster>

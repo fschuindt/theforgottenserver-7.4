@@ -36,11 +36,11 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2511" chance="11000"/><!-- 11% brass shield -->
 				<item id="2425" chance="2400"/><!-- 2.4% obsidian lance -->
 				<item id="2412" chance="12000"/><!-- 12% katana -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2649" chance="20000"/><!-- 20% leather legs -->
 		<item id="2478" chance="7000"/><!-- 7% brass legs -->

@@ -38,11 +38,11 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2379" chance="36000"/><!-- 36% dagger -->
 				<item id="2406" chance="18000"/><!-- 18% short sword -->
 				<item id="2449" chance="10000"/><!-- 10% bone club -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2467" chance="15000"/><!-- 15% leather armor -->
 		<item id="2461" chance="20000"/><!-- 20% leather helmet -->

@@ -33,13 +33,13 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2509" chance="2000"/><!-- 2% steel shield -->
 				<item id="2511" chance="34000"/><!-- 34% brass shield -->
 				<item id="2391" chance="300"/><!-- 0.1% war hammer -->
 				<item id="2386" chance="60000"/><!-- 60% axe -->
 				<item id="2398" chance="20000"/><!-- 20% mace -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2649" chance="30000"/><!-- 30% leather legs -->
 		<item id="2465" chance="5000"/><!-- 5% brass armor -->

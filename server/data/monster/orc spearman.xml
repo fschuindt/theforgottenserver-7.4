@@ -34,10 +34,10 @@
 	</voices>
 	<loot>
 		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
+			<!--inside-->
 				<item id="2389" chance="46000"/><!-- 46% spear -->
 				<item id="2420" chance="20000"/><!-- 20% machete -->
-			</inside>
+			<!--/inside-->
 		</item>
 		<item id="2220" chance="15400"/><!-- 15.4% dirty fur -->
 		<item id="2468" chance="20000"/><!-- 20% studded legs -->
