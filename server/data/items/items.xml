@@ -2245,7 +2245,6 @@
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentEnergy" value="10" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2162" article="a" name="magic light wand">
 		<attribute key="slotType" value="ammo" />
@@ -2311,7 +2310,6 @@
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentEarth" value="10" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2171" article="a" name="platinum amulet">
 		<attribute key="description" value="It is an amulet of protection." />
@@ -2325,7 +2323,6 @@
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentManaDrain" value="20" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2173" article="an" name="amulet of loss">
 		<attribute key="weight" value="420" />
@@ -2411,7 +2408,6 @@
 		<attribute key="charges" value="5" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentPhysical" value="80" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2198" article="an" name="elven amulet">
 		<attribute key="weight" value="270" />
@@ -2420,7 +2416,6 @@
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentPhysical" value="5" />
 		<attribute key="absorbPercentMagic" value="5" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2199" article="a" name="garlic necklace">
 		<attribute key="weight" value="380" />
@@ -2428,7 +2423,6 @@
 		<attribute key="charges" value="150" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentLifeDrain" value="20" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2200" article="a" name="protection amulet">
 		<attribute key="weight" value="550" />
@@ -2436,7 +2430,6 @@
 		<attribute key="charges" value="250" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentPhysical" value="6" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2201" article="a" name="dragon necklace">
 		<attribute key="weight" value="630" />
@@ -2444,9 +2437,8 @@
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentFire" value="8" />
-		<attribute key="showattributes" value="1" />
 	</item>
-	<item id="2202" article="a" name="stealth ring (invisibility)">
+	<item id="2202" article="a" name="stealth ring">
 		<attribute key="weight" value="100" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
@@ -2456,7 +2448,7 @@
 		<attribute key="invisible" value="1" />
 		<attribute key="showattributes" value="1" />
 	</item>
-	<item id="2203" article="a" name="power ring (fist fighting +6)">
+	<item id="2203" article="a" name="power ring">
 		<attribute key="weight" value="80" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
@@ -2465,7 +2457,7 @@
 		<attribute key="duration" value="1800" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2204" article="an" name="energy ring (magic shield)">
+	<item id="2204" article="an" name="energy ring">
 		<attribute key="weight" value="80" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
@@ -2475,7 +2467,7 @@
 		<attribute key="manashield" value="1" />
 		<attribute key="showattributes" value="1" />
 	</item>
-	<item id="2205" article="a" name="life ring (faster regeneration)">
+	<item id="2205" article="a" name="life ring">
 		<attribute key="weight" value="80" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
@@ -2519,7 +2511,7 @@
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2210" article="a" name="sword ring (sword fighting +4)">
+	<item id="2210" article="a" name="sword ring">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
@@ -2528,7 +2520,7 @@
 		<attribute key="duration" value="1800" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2211" article="an" name="axe ring (axe fighting +4)">
+	<item id="2211" article="an" name="axe ring">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
@@ -2537,7 +2529,7 @@
 		<attribute key="duration" value="1800" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2212" article="a" name="club ring (club fighting +4)">
+	<item id="2212" article="a" name="club ring">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
@@ -2560,7 +2552,7 @@
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2215" article="a" name="dwarven ring (hard drinking)">
+	<item id="2215" article="a" name="dwarven ring">
 		<attribute key="weight" value="110" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
@@ -2570,7 +2562,7 @@
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
 	</item>
-	<item id="2216" article="a" name="ring of healing (faster regeneration)">
+	<item id="2216" article="a" name="ring of healing">
 		<attribute key="weight" value="80" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="decayTo" value="0" />
