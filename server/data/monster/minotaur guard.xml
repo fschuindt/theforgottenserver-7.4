@@ -31,6 +31,12 @@
 		<voice sentence="Kaplar!"/>
 	</voices>
 	<loot>
+		<item id="2666" chance="20000"/><!-- 20% meat -->
+		<item id="2148" chance="60000" countmax="20"/><!-- 20 60% gold coin -->
+		<item id="2464" chance="6000"/><!-- 6% chain armor -->
+		<item id="2465" chance="8000"/><!-- 8% brass armor -->
+		<item id="2649" chance="30000"/><!-- 30% leather legs -->
+		<item id="2648" chance="2000"/><!-- 2% chain legs -->
 		<item id="1987" chance="100000"><!-- bag -->
 			<!--inside-->
 				<item id="2387" chance="800"/><!-- 0.8% double axe -->
@@ -39,11 +45,5 @@
 				<item id="2580" chance="10000"/><!-- 10% fishing rod -->
 			<!--/inside-->
 		</item>
-		<item id="2648" chance="2000"/><!-- 2% chain legs -->
-		<item id="2649" chance="30000"/><!-- 30% leather legs -->
-		<item id="2465" chance="8000"/><!-- 8% brass armor -->
-		<item id="2464" chance="6000"/><!-- 6% chain armor -->
-		<item id="2148" chance="60000" countmax="20"/><!-- 20 60% gold coin -->
-		<item id="2666" chance="20000"/><!-- 20% meat -->
 	</loot>
 </monster>

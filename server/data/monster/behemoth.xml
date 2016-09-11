@@ -41,6 +41,17 @@
 		<voice sentence="Crush the intruders!" yell="1"/>
 	</voices>
 	<loot>
+		<item id="2666" chance="80000" countmax="6"/><!-- 6 80% meat -->
+		<item id="2148" chance="70000" countmax="60"/><!-- 60 70% gold coin -->
+		<item id="2148" chance="50000" countmax="80"/><!-- 80 50% gold coin -->
+		<item id="2150" chance="8000" countmax="2"/><!-- 2 8% small amethyst -->
+		<item id="2231" chance="14000"/><!-- 14% big bone -->
+		<item id="2553" chance="12000"/><!-- 12% pick -->
+		<item id="2023" chance="22000"/><!-- 22% amphora  -->
+		<item id="2125" chance="600"/><!-- 0.6% crystal necklace -->
+		<item id="2489" chance="6000"/><!-- 6% dark armor -->	
+		<item id="2463" chance="4000"/><!-- 4% plate armor -->
+		<item id="2645" chance="800"/><!-- 0.8% steel boots -->
 		<item id="1987" chance="100000"><!-- bag -->
 			<!--inside-->
 				<item id="2393" chance="2000"/><!-- 2% giant sword -->
@@ -51,16 +62,5 @@
 				<item id="2188" chance="300"/><!-- 0.3% green spell wand -->
 			<!--/inside-->
 		</item>
-		<item id="2645" chance="800"/><!-- 0.8% steel boots -->
-		<item id="2489" chance="6000"/><!-- 6% dark armor -->	
-		<item id="2463" chance="4000"/><!-- 4% plate armor -->
-		<item id="2125" chance="600"/><!-- 0.6% crystal necklace -->
-		<item id="2231" chance="14000"/><!-- 14% big bone -->
-		<item id="2553" chance="12000"/><!-- 12% pick -->
-		<item id="2023" chance="22000"/><!-- 22% amphora  -->
-		<item id="2150" chance="8000" countmax="2"/><!-- 2 8% small amethyst -->
-		<item id="2666" chance="80000" countmax="6"/><!-- 6 80% meat -->
-		<item id="2148" chance="70000" countmax="60"/><!-- 60 70% gold coin -->
-		<item id="2148" chance="50000" countmax="80"/><!-- 80 50% gold coin -->
 	</loot>
 </monster>

@@ -54,30 +54,30 @@
 		<voice sentence="I WILL SET THE WORLD IN FIRE!" yell="1"/>
 		<voice sentence="I WILL PROTECT MY BROOD!" yell="1"/>
 	</voices>
-<loot>
-	<item id="2148" countmax="98" chance1="100000" chancemax="6000"/><!-- gold -->
-	<item id="2148" countmax="99" chance1="100000" chancemax="6000"/><!-- gold -->
-	<item id="2796" countmax="7" chance1="26001" chancemax="7000"/><!-- 26% green mushroom -->
-	<item id="2146" countmax="1" chance1="13001" chancemax="13000"/><!-- 13% small sapphire -->
-	<item id="2547" countmax="10" chance1="17000" chancemax="2000"/><!-- 17% power bolt -->
-	<item id="2672" countmax="4" chance1="80000" chancemax="3000"/><!-- dragon ham -->
-	<item id="2033" chance="6000"/><!-- 6% 2033 golden mug -->
-	<item id="2177" chance="2000"/><!-- 2% life crystal -->
-	<item id="1976" chance="11000"/><!-- 11% gemmed book -->
-	<item id="2479" chance="8000"/><!-- 8% strange helmet -->
-	<item id="2492" chance="2000"/><!-- 2% dragon scale mail -->
-	<item id="2498" chance="600"/><!-- royal helmet -->
+	<loot>
+		<item id="2148" countmax="98" chance1="100000" chancemax="6000"/><!-- gold -->
+		<item id="2148" countmax="99" chance1="100000" chancemax="6000"/><!-- gold -->
+		<item id="2796" countmax="7" chance1="26001" chancemax="7000"/><!-- 26% green mushroom -->
+		<item id="2146" countmax="1" chance1="13001" chancemax="13000"/><!-- 13% small sapphire -->
+		<item id="2547" countmax="10" chance1="17000" chancemax="2000"/><!-- 17% power bolt -->
+		<item id="2672" countmax="4" chance1="80000" chancemax="3000"/><!-- dragon ham -->
+		<item id="2033" chance="6000"/><!-- 6% 2033 golden mug -->
+		<item id="2177" chance="2000"/><!-- 2% life crystal -->
+		<item id="1976" chance="11000"/><!-- 11% gemmed book -->
+		<item id="2479" chance="8000"/><!-- 8% strange helmet -->
+		<item id="2492" chance="2000"/><!-- 2% dragon scale mail -->
+		<item id="2498" chance="600"/><!-- royal helmet -->
 		<item id="1987" chance="100000"><!-- bag -->
 			<!--inside-->
-			<item id="2167" chance="11000"/><!-- 11% energy ring -->
-			<item id="2409" chance="20000"/><!-- 2409 serpent sword -->
-			<item id="2434" chance="20000"/><!-- 2434 dragon hammer -->
-			<item id="2413" chance="20000"/><!-- 2413 broad sword -->
-			<!--<item id="2187" chance="20000"/> 2187 wand of inferno -->
-			<item id="2387" chance="20000"/><!-- 2387 double axe -->
-			<!--<item id="2191" chance="20000"/> 2191 wand of dragonbreath -->
-			<item id="2392" chance="2000"/><!-- 2% fire sword -->
-			<item id="2528" chance="600"/><!-- tower shield -->
+				<item id="2167" chance="11000"/><!-- 11% energy ring -->
+				<item id="2409" chance="20000"/><!-- 2409 serpent sword -->
+				<item id="2434" chance="20000"/><!-- 2434 dragon hammer -->
+				<item id="2413" chance="20000"/><!-- 2413 broad sword -->
+				<!--<item id="2187" chance="20000"/> 2187 wand of inferno -->
+				<item id="2387" chance="20000"/><!-- 2387 double axe -->
+				<!--<item id="2191" chance="20000"/> 2191 wand of dragonbreath -->
+				<item id="2392" chance="2000"/><!-- 2% fire sword -->
+				<item id="2528" chance="600"/><!-- tower shield -->
 			<!--/inside-->
 		</item>
 	</loot>

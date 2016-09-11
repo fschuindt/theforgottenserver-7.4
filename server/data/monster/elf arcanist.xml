@@ -51,16 +51,9 @@
 		<voice sentence="Vihil Ealuel!"/>
 	</voices>
 	<loot>
-		<item id="1987" chance="100000"><!-- bag -->
-			<!--inside-->
-				<item id="2047" chance="44000"/><!-- 44% candlestick -->
-				<item id="2401" chance="22000"/><!-- 22% staff -->
-				<!--<item id="2189" chance="2000"/> 2% wand of cosmic energy -->
-				<item id="2198" chance="2000"/><!-- 4% elven amulet -->
-			<!--/inside-->
-		</item>
-		<item id="2652" chance="14000"/><!-- 14% green tunic -->
-		<item id="2642" chance="26000"/><!-- 26% sandals -->
+		<item id="2689" chance="28000"/><!-- 28% bread -->
+		<item id="2682" chance="44000"/><!-- 44% melon -->
+		<item id="2544" chance="12000"  countmax="3"/><!-- 3 12% arrow -->
 		<item id="2260" chance="36000"/><!-- 36% blank rune -->
 		<item id="2802" chance="10000"/><!-- 10% sling herb -->
 		<item id="2747" chance="14000"/><!-- 14% grave flower -->
@@ -69,8 +62,15 @@
 		<item id="1949" chance="60000"/><!-- 60% scroll -->
 		<item id="2600" chance="18000"/><!-- 18% inkwell -->
 		<item id="2177" chance="2000"/><!-- 2% life crystal -->
-		<item id="2544" chance="12000"  countmax="3"/><!-- 3 12% arrow -->
-		<item id="2689" chance="28000"/><!-- 28% bread -->
-		<item id="2682" chance="44000"/><!-- 44% melon -->
+		<item id="2652" chance="14000"/><!-- 14% green tunic -->
+		<item id="2642" chance="26000"/><!-- 26% sandals -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<!--inside-->
+				<item id="2401" chance="22000"/><!-- 22% staff -->
+				<!--<item id="2189" chance="2000"/> 2% wand of cosmic energy -->
+				<item id="2198" chance="2000"/><!-- 4% elven amulet -->
+				<item id="2047" chance="44000"/><!-- 44% candlestick -->
+			<!--/inside-->
+		</item>
 	</loot>
 </monster>

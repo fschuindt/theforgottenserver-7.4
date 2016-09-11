@@ -94,19 +94,19 @@
 		<item id="2195" chance="18000"/><!-- 18% 2195 boots of haste -->
 		<item id="2470" chance="12000"/><!-- 12% 2470 golden legs -->
 		<item id="2472" chance="6000"/><!-- 6% 2472 magic plate armor -->
-			<item id="1987" chance="100000"><!-- bag -->
-				<!--inside-->
-					<item id="2214" chance="30000"/><!-- 30% 2214 ring of healing -->
-					<item id="2164" chance="6000"/><!-- 6% 2164 might ring -->
-					<item id="2418" chance="6000"/><!-- 6% 2418 golden sickle -->
-					<item id="2434" chance="6000"/><!-- 6% 2434 dragon hammer -->
-					<item id="2377" chance="18000"/><!-- 18% 2377 two handed sword -->
-					<item id="2432" chance="12000"/><!-- 12% 2432 fire axe -->
-					<item id="2520" chance="25000"/><!-- 25% 2520 demon shield -->
-					<item id="2393" chance="25000"/><!-- 25% 2393 giant sword -->
-					<item id="2514" chance="12000"/><!-- 12% 2514 mastermind shield -->
-					<item id="2421" chance="6000"/><!-- 6% 2421 thunder hammer -->
-				<!--/inside-->
-			</item>
+		<item id="1987" chance="100000"><!-- bag -->
+			<!--inside-->
+				<item id="2214" chance="30000"/><!-- 30% 2214 ring of healing -->
+				<item id="2164" chance="6000"/><!-- 6% 2164 might ring -->
+				<item id="2418" chance="6000"/><!-- 6% 2418 golden sickle -->
+				<item id="2434" chance="6000"/><!-- 6% 2434 dragon hammer -->
+				<item id="2377" chance="18000"/><!-- 18% 2377 two handed sword -->
+				<item id="2432" chance="12000"/><!-- 12% 2432 fire axe -->
+				<item id="2520" chance="25000"/><!-- 25% 2520 demon shield -->
+				<item id="2393" chance="25000"/><!-- 25% 2393 giant sword -->
+				<item id="2514" chance="12000"/><!-- 12% 2514 mastermind shield -->
+				<item id="2421" chance="6000"/><!-- 6% 2421 thunder hammer -->
+			<!--/inside-->
+		</item>
 	</loot>
 </monster>
