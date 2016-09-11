@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <monster name="The Old Widow" nameDescription="the Old Widow" race="blood" experience="2800" speed="240" manacost="0">
 	<health now="3550" max="3550"/>
-	<look type="208" corpse="2857"/>
+	<look type="38" corpse="2857"/>
 	<targetchange interval="1000" chance="10"/>
 	<targetstrategies nearest="70" health="20" damage="0" random="10"/>
 	<flags>

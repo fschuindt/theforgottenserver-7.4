@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="The Horned Fox" nameDescription="the Horned Fox" race="blood" experience="200" speed="210" manacost="0">
 	<health now="265" max="265"/>
-	<look type="202" corpse="2876"/>
+	<look type="29" corpse="2876"/>
 	<targetchange interval="1000" chance="5"/>
 	<targetstrategies nearest="70" health="10" damage="20" random="0"/>
 	<flags>
