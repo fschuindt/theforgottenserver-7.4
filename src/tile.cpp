@@ -538,8 +538,10 @@ ReturnValue Tile::queryAdd(int32_t, const Thing& thing, uint32_t, uint32_t flags
 
 		const CreatureVector* creatures = getCreatures();
 		if (const Player* player = creature->getPlayer()) {
-			if (creatures && !creatures->empty() && !hasBitSet(FLAG_IGNOREBLOCKCREATURE, flags) && !player->isAccessPlayer()) {
-				return RETURNVALUE_NOTPOSSIBLE;
+			for (const Creature* tileCreature : *creatures) {
+				if (creatures && !creatures->empty() && !hasBitSet(FLAG_IGNOREBLOCKCREATURE, flags) && !player->isAccessPlayer() && !tileCreature->isInGhostMode()) {
+					return RETURNVALUE_NOTPOSSIBLE;
+				}
 			}
 
 			if (player->getParent() == nullptr && hasFlag(TILESTATE_NOLOGOUT)) {
@@ -1408,7 +1410,7 @@ void Tile::internalAddThing(uint32_t, Thing* thing)
 	if (creature) {
 		g_game.map.clearSpectatorCache();
 		CreatureVector* creatures = makeCreatures();
-		creatures->insert(creatures->begin(), creature);
+		creatures->insert(creatures->end(), creature);
 	} else {
 		Item* item = thing->getItem();
 		if (item == nullptr) {
