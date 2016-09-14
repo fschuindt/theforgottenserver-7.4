@@ -19,6 +19,7 @@ if NpcSystem == nil then
 	dofile('data/npc/lib/npcsystem/keywordhandler.lua')
 	dofile('data/npc/lib/npcsystem/npchandler.lua')
 	dofile('data/npc/lib/npcsystem/modules.lua')
+    dofile('data/npc/lib/npcsystem/queue.lua')
 
 	-- Global npc constants:
 
@@ -38,6 +39,9 @@ if NpcSystem == nil then
 
 	-- Talkdelay behavior. For more information, look at the top of npchandler.lua.
 	NPCHANDLER_TALKDELAY = TALKDELAY_ONTHINK
+    
+	-- Conversation behavior. For more information, look at the top of npchandler.lua.
+	NPCHANDLER_CONVBEHAVIOR = CONVERSATION_DEFAULT
 
 	-- Constant strings defining the keywords to replace in the default messages.
 	--	For more information, look at the top of npchandler.lua...
@@ -45,7 +49,7 @@ if NpcSystem == nil then
 	TAG_ITEMCOUNT = '|ITEMCOUNT|'
 	TAG_TOTALCOST = '|TOTALCOST|'
 	TAG_ITEMNAME = '|ITEMNAME|'
-	TAG_TIME = '|TIME|'
+    TAG_QUEUESIZE = '|QUEUESIZE|'
 
 	NpcSystem = {}
 
@@ -136,6 +140,10 @@ if NpcSystem == nil then
 		local ret = NpcSystem.getParameter('message_alreadyfocused')
 		if ret ~= nil then
 			npcHandler:setMessage(MESSAGE_ALREADYFOCUSED, ret)
+		end
+		local ret = NpcSystem.getParameter('message_placedinqueue')
+		if(ret ~= nil) then
+			npcHandler:setMessage(MESSAGE_PLACEDINQUEUE, ret)
 		end
 		local ret = NpcSystem.getParameter('message_buy')
 		if ret ~= nil then
