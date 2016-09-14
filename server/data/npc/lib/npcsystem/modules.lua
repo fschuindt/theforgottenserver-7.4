@@ -1168,6 +1168,10 @@ if Modules == nil then
 		shop_eventtype[cid] = parameters.eventType
 		shop_subtype[cid] = parameters.subType
 
+		if count > 1 then
+			shop_rlname[cid] = parameters.realName .. ItemType(itemid):getPluralName()
+		end
+
 		local parseInfo = {
 			[TAG_PLAYERNAME] = getPlayerName(cid),
 			[TAG_ITEMCOUNT] = shop_amount[cid],
