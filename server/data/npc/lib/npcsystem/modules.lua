@@ -48,7 +48,11 @@ if Modules == nil then
 			return false
 		end
 
-		local parseInfo = {[TAG_PLAYERNAME] = Player(cid):getName()}
+		local parseInfo = {
+			[TAG_PLAYERNAME] = Player(cid):getName(), 
+			[TAG_TIME] = getFormattedWorldTime()
+		}
+		
 		npcHandler:say(npcHandler:parseMessage(parameters.text or parameters.message, parseInfo), cid, parameters.publicize and true)
 		if parameters.reset then
 			npcHandler:resetNpc(cid)
@@ -1167,6 +1171,10 @@ if Modules == nil then
 		shop_npcuid[cid] = getNpcCid()
 		shop_eventtype[cid] = parameters.eventType
 		shop_subtype[cid] = parameters.subType
+
+		if count > 1 then
+			shop_rlname[cid] = parameters.realName .. ItemType(itemid):getPluralName()
+		end
 
 		local parseInfo = {
 			[TAG_PLAYERNAME] = getPlayerName(cid),
