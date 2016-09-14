@@ -48,11 +48,7 @@ if Modules == nil then
 			return false
 		end
 
-		local parseInfo = {
-			[TAG_PLAYERNAME] = Player(cid):getName(), 
-			[TAG_TIME] = getFormattedWorldTime()
-		}
-		
+		local parseInfo = {[TAG_PLAYERNAME] = Player(cid):getName()}
 		npcHandler:say(npcHandler:parseMessage(parameters.text or parameters.message, parseInfo), cid, parameters.publicize and true)
 		if parameters.reset then
 			npcHandler:resetNpc(cid)
@@ -959,8 +955,11 @@ if Modules == nil then
 			parseInfo[TAG_ITEMCOUNT] = a
 			msg = self.npcHandler:parseMessage(msg, parseInfo)
 			doPlayerSendCancel(cid, msg)
-			self.npcHandler.talkStart[cid] = os.time()
-
+			if(NPCHANDLER_CONVBEHAVIOR ~= CONVERSATION_DEFAULT) then
+				self.npcHandler.talkStart[cid] = os.time()
+			else
+				self.npcHandler.talkStart = os.time()
+			end
 			if a > 0 then
 				doPlayerRemoveMoney(cid, ((a * shopItem.buy) + (b * 20)))
 				return true
@@ -972,7 +971,11 @@ if Modules == nil then
 			msg = self.npcHandler:parseMessage(msg, parseInfo)
 			doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, msg)
 			doPlayerRemoveMoney(cid, totalCost)
-			self.npcHandler.talkStart[cid] = os.time()
+			if(NPCHANDLER_CONVBEHAVIOR ~= CONVERSATION_DEFAULT) then
+				self.npcHandler.talkStart[cid] = os.time()
+			else
+				self.npcHandler.talkStart = os.time()
+			end
 			return true
 		end
 	end
@@ -1006,13 +1009,21 @@ if Modules == nil then
 			msg = self.npcHandler:parseMessage(msg, parseInfo)
 			doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, msg)
 			doPlayerAddMoney(cid, amount * shopItem.sell)
-			self.npcHandler.talkStart[cid] = os.time()
+			if(NPCHANDLER_CONVBEHAVIOR ~= CONVERSATION_DEFAULT) then
+				self.npcHandler.talkStart[cid] = os.time()
+			else
+				self.npcHandler.talkStart = os.time()
+			end
 			return true
 		else
 			local msg = self.npcHandler:getMessage(MESSAGE_NEEDITEM)
 			msg = self.npcHandler:parseMessage(msg, parseInfo)
 			doPlayerSendCancel(cid, msg)
-			self.npcHandler.talkStart[cid] = os.time()
+			if(NPCHANDLER_CONVBEHAVIOR ~= CONVERSATION_DEFAULT) then
+				self.npcHandler.talkStart[cid] = os.time()
+			else
+				self.npcHandler.talkStart = os.time()
+			end
 			return false
 		end
 	end
@@ -1171,10 +1182,6 @@ if Modules == nil then
 		shop_npcuid[cid] = getNpcCid()
 		shop_eventtype[cid] = parameters.eventType
 		shop_subtype[cid] = parameters.subType
-
-		if count > 1 then
-			shop_rlname[cid] = parameters.realName .. ItemType(itemid):getPluralName()
-		end
 
 		local parseInfo = {
 			[TAG_PLAYERNAME] = getPlayerName(cid),
