@@ -45,6 +45,7 @@ if NpcSystem == nil then
 	TAG_ITEMCOUNT = '|ITEMCOUNT|'
 	TAG_TOTALCOST = '|TOTALCOST|'
 	TAG_ITEMNAME = '|ITEMNAME|'
+	TAG_TIME = '|TIME|'
 
 	NpcSystem = {}
 
