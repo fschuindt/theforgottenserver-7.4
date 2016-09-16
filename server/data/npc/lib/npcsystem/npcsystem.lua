@@ -50,6 +50,7 @@ if NpcSystem == nil then
 	TAG_TOTALCOST = '|TOTALCOST|'
 	TAG_ITEMNAME = '|ITEMNAME|'
     TAG_QUEUESIZE = '|QUEUESIZE|'
+    TAG_TIME = '|TIME|'
 
 	NpcSystem = {}
 

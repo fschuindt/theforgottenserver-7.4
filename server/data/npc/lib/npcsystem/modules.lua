@@ -48,7 +48,11 @@ if Modules == nil then
 			return false
 		end
 
-		local parseInfo = {[TAG_PLAYERNAME] = Player(cid):getName()}
+		local parseInfo = {
+            [TAG_PLAYERNAME] = Player(cid):getName(), 
+            [TAG_TIME] = getFormattedWorldTime()
+        }
+     
 		npcHandler:say(npcHandler:parseMessage(parameters.text or parameters.message, parseInfo), cid, parameters.publicize and true)
 		if parameters.reset then
 			npcHandler:resetNpc(cid)
