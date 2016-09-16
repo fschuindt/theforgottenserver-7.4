@@ -536,11 +536,16 @@ ReturnValue Tile::queryAdd(int32_t, const Thing& thing, uint32_t, uint32_t flags
 			return RETURNVALUE_NOERROR;
 		}
 
+		
 		const CreatureVector* creatures = getCreatures();
 		if (const Player* player = creature->getPlayer()) {
-			for (const Creature* tileCreature : *creatures) {
-				if (creatures && !creatures->empty() && !hasBitSet(FLAG_IGNOREBLOCKCREATURE, flags) && !player->isAccessPlayer() && !tileCreature->isInGhostMode()) {
-					return RETURNVALUE_NOTPOSSIBLE;
+			if (creatures != nullptr) {
+				for (const Creature* tileCreature : *creatures) {
+					if (!hasBitSet(FLAG_IGNOREBLOCKCREATURE, flags) 
+					    && !player->isAccessPlayer() 
+					    && !tileCreature->isInGhostMode()) {
+						return RETURNVALUE_NOTPOSSIBLE;
+					}
 				}
 			}
 
