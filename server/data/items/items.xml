@@ -2486,7 +2486,6 @@
 		<attribute key="duration" value="600" />
 		<attribute key="showduration" value="1" />
 		<attribute key="speed" value="60" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2207" article="a" name="sword ring">
 		<attribute key="weight" value="90" />
@@ -2672,7 +2671,7 @@
 	</item>
 	<item id="2260" article="a" name="blank rune">
 		<attribute key="type" value="rune" />
-		<attribute key="weight" value="210" />
+		<attribute key="weight" value="120" />
 	</item>
 	<item id="2261" article="a" name="spell rune">
 		<attribute key="type" value="rune" />

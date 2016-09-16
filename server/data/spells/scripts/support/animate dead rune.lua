@@ -3,9 +3,9 @@ function onCastSpell(creature, var)
 		return false
 	end
 
-	local position = variantToPosition(variant)
+	local position = variantToPosition(var)
 	local tile = Tile(position)
-	if tile and creature:getSkull() ~= SKULL_BLACK then
+	if tile then
 		local corpse = tile:getTopDownItem()
 		if corpse then
 			local itemType = corpse:getType()

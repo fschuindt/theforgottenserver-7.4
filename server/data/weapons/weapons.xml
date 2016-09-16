@@ -13,5 +13,5 @@
 	<distance id="2544" action="removecount" /> <!-- arrow -->
 	<distance id="2545" action="removecount" script="poison_arrow.lua" />
 	<distance id="2546" action="removecount" script="burst_arrow.lua" />
-	<distance id="2547" action="removecount" unproperly="1" level="55" /> <!-- Power Bolt -->
+	<distance id="2547" action="removecount" /> <!-- Power Bolt -->
 </weapons>
