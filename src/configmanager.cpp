@@ -82,10 +82,11 @@ bool ConfigManager::load()
 	boolean[EMOTE_SPELLS] = getGlobalBoolean(L, "emoteSpells", false);
 	boolean[WARN_UNSAFE_SCRIPTS] = getGlobalBoolean(L, "warnUnsafeScripts", true);
 	boolean[CONVERT_UNSAFE_SCRIPTS] = getGlobalBoolean(L, "convertUnsafeScripts", true);
-	boolean[CLASSIC_EQUIPMENT_SLOTS] = getGlobalBoolean(L, "classicEquipmentSlots", false);
-	boolean[UH_TRAP] = getGlobalBoolean(L, "UHTrap", false);
+	boolean[CLASSIC_EQUIPMENT_SLOTS] = getGlobalBoolean(L, "classicEquipmentSlots", true);
+	boolean[UH_TRAP] = getGlobalBoolean(L, "UHTrap", true);
 	boolean[HEIGHT_STACK_BLOCK] = getGlobalBoolean(L, "heightStackBlock", true);
 	boolean[ALLOW_FIGHT_BACK] = getGlobalBoolean(L, "allowFightBack", true);
+	boolean[HOUSE_ANTI_TRASH] = getGlobalBoolean(L, "houseAntiTrash", false);
 
 
 	string[DEFAULT_PRIORITY] = getGlobalString(L, "defaultPriority", "high");

@@ -44,6 +44,7 @@ class ConfigManager
 			UH_TRAP,
 			HEIGHT_STACK_BLOCK,
 			ALLOW_FIGHT_BACK,
+			HOUSE_ANTI_TRASH,
 
 			LAST_BOOLEAN_CONFIG /* this must be the last one */
 		};
