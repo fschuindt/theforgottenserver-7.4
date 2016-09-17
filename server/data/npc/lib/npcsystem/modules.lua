@@ -48,7 +48,11 @@ if Modules == nil then
 			return false
 		end
 
-		local parseInfo = {[TAG_PLAYERNAME] = Player(cid):getName()}
+		local parseInfo = {
+            [TAG_PLAYERNAME] = Player(cid):getName(), 
+            [TAG_TIME] = getFormattedWorldTime()
+        }
+     
 		npcHandler:say(npcHandler:parseMessage(parameters.text or parameters.message, parseInfo), cid, parameters.publicize and true)
 		if parameters.reset then
 			npcHandler:resetNpc(cid)
@@ -800,7 +804,6 @@ if Modules == nil then
 					}
 
 				keywords = {}
-				keywords[#keywords + 1] = "buy"
 				keywords[#keywords + 1] = name
 				local node = self.npcHandler.keywordHandler:addKeyword(keywords, ShopModule.tradeItem, parameters)
 				node:addChildKeywordNode(self.yesNode)
@@ -855,7 +858,6 @@ if Modules == nil then
 					}
 
 				keywords = {}
-				keywords[#keywords + 1] = "buy"
 				keywords[#keywords + 1] = name
 				local node = self.npcHandler.keywordHandler:addKeyword(keywords, ShopModule.tradeItem, parameters)
 				node:addChildKeywordNode(self.yesNode)
@@ -1176,7 +1178,7 @@ if Modules == nil then
 
 		shop_amount[cid] = module.amount
 		shop_cost[cid] = parameters.cost
-		shop_rlname[cid] = parameters.realName
+        shop_rlname[cid] = count > 1 and parameters.realName .. ItemType(itemid):getPluralName() or parameters.realName
 		shop_itemid[cid] = parameters.itemid
 		shop_container[cid] = parameters.container
 		shop_npcuid[cid] = getNpcCid()

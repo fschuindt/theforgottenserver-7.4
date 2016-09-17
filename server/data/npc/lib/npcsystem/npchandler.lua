@@ -69,13 +69,14 @@ if NpcHandler == nil then
 	TAG_ITEMCOUNT = "|ITEMCOUNT|"
 	TAG_TOTALCOST = "|TOTALCOST|"
 	TAG_ITEMNAME = "|ITEMNAME|"
-    TAG_QUEUESIZE = '|QUEUESIZE|'
+    TAG_QUEUESIZE = "|QUEUESIZE|"
+    TAG_TIME = "|TIME|"
 
 	NpcHandler = {
 		keywordHandler = nil,
 		focuses = nil,
 		talkStart = nil,
-		idleTime = 120,
+		idleTime = 60,
 		talkRadius = 3,
 		talkDelayTime = 1, -- Seconds to delay outgoing messages.
 		talkDelay = nil,
@@ -524,8 +525,12 @@ if NpcHandler == nil then
 				elseif(self.focuses ~= 0) then
 					if(not self:isInRange(self.focuses)) then
 						self:onWalkAway(self.focuses)
-					elseif(os.time()-self.talkStart > self.idleTime) then
-						self:unGreet(self.focuses)
+					elseif((os.time() - self.talkStart) > self.idleTime) then  
+                        if self.queue:greetNext() then
+                            self.talkStart = self.talkStart + self.idleTime
+                        else
+                            self:unGreet(self.focuses)
+                        end
 					else
 						self:updateFocus()
 					end

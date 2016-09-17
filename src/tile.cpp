@@ -539,7 +539,7 @@ ReturnValue Tile::queryAdd(int32_t, const Thing& thing, uint32_t, uint32_t flags
 		
 		const CreatureVector* creatures = getCreatures();
 		if (const Player* player = creature->getPlayer()) {
-			if (creatures != nullptr) {
+			if (creatures) {
 				for (const Creature* tileCreature : *creatures) {
 					if (!hasBitSet(FLAG_IGNOREBLOCKCREATURE, flags) 
 					    && !player->isAccessPlayer() 
