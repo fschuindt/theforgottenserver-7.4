@@ -16,7 +16,7 @@ local function serverSave()
 end
 
 local function secondServerSaveWarning()
-	broadcastMessage("Server is saving game in one minute.\nPlease logout", MESSAGE_STATUS_WARNING)
+	broadcastMessage("Server is saving game in one minute.\nPlease logout.", MESSAGE_STATUS_WARNING)
 	addEvent(serverSave, 60000)
 end
 
