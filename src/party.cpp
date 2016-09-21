@@ -113,10 +113,9 @@ bool Party::leaveParty(Player* player)
 		memberList.erase(it);
 	}
 
-	player->setParty(nullptr);
 	player->sendClosePrivate(CHANNEL_PARTY);
+	player->setParty(nullptr);
 	g_game.updatePlayerShield(player);
-
 	for (Player* member : memberList) {
 		member->sendCreatureSkull(player);
 		player->sendPlayerPartyIcons(member);
@@ -125,7 +124,6 @@ bool Party::leaveParty(Player* player)
 	leader->sendCreatureSkull(player);
 	player->sendCreatureSkull(player);
 	player->sendPlayerPartyIcons(leader);
-
 	player->sendTextMessage(MESSAGE_INFO_DESCR, "You have left the party.");
 
 	updateSharedExperience();
