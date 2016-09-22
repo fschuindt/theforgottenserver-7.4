@@ -818,27 +818,27 @@ bool Monsters::loadMonster(const std::string& file, const std::string& monsterNa
 		}
 	}
 
-	if (node = monsterNode.child("targetstrategies")) {
+	if ((node = monsterNode.child("targetstrategies"))) {
 
-		if (attr = node.attribute("nearest")) {
+		if ((attr = node.attribute("nearest"))) {
 			mType->targetStrategiesNearestPercent = pugi::cast<int32_t>(attr.value());
 		} else {
 			std::cout << "[Warning - Monsters::loadMonster] Missing targetStrategiesNearestPercent. " << file << std::endl;
 		}
 
-		if (attr = node.attribute("health")) {
+		if ((attr = node.attribute("health"))) {
 			mType->targetStrategiesLowerHPPercent = pugi::cast<int32_t>(attr.value());
 		} else {
 			std::cout << "[Warning - Monsters::loadMonster] Missing targetStrategiesLowerHPPercent. " << file << std::endl;
 		}
 
-		if (attr = node.attribute("damage")) {
+		if ((attr = node.attribute("damage"))) {
 			mType->targetStrategiesMostDamagePercent = pugi::cast<int32_t>(attr.value());
 		} else {
 			std::cout << "[Warning - Monsters::loadMonster] Missing targetStrategiesMostDamagePercent. " << file << std::endl;
 		}
 
-		if (attr = node.attribute("random")) {
+		if ((attr = node.attribute("random"))) {
 			mType->targetStrategiesRandom = pugi::cast<int32_t>(attr.value());
 		} else {
 			std::cout << "[Warning - Monsters::loadMonster] Missing targetStrategiesRandom. " << file << std::endl;
