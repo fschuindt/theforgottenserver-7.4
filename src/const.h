@@ -372,14 +372,14 @@ enum PlayerFlags : uint64_t {
 	PlayerFlag_NotGainSkill = 1 << 28,
 	PlayerFlag_SetMaxSpeed = 1 << 29,
 	PlayerFlag_SpecialVIP = 1 << 30,
-	PlayerFlag_NotGenerateLoot = static_cast<uint64_t>(1) << 31,
-	PlayerFlag_CanTalkRedChannelAnonymous = static_cast<uint64_t>(1) << 32,
-	PlayerFlag_IgnoreProtectionZone = static_cast<uint64_t>(1) << 33,
-	PlayerFlag_IgnoreSpellCheck = static_cast<uint64_t>(1) << 34,
-	PlayerFlag_IgnoreWeaponCheck = static_cast<uint64_t>(1) << 35,
-	PlayerFlag_CannotBeMuted = static_cast<uint64_t>(1) << 36,
-	PlayerFlag_IsAlwaysPremium = static_cast<uint64_t>(1) << 37,
-	PlayerFlag_CanAnswerRuleViolations = static_cast<uint64_t>(1) << 38,
+	PlayerFlag_NotGenerateLoot = 1ull << 31,
+	PlayerFlag_CanTalkRedChannelAnonymous = 1ull << 32,
+	PlayerFlag_IgnoreProtectionZone = 1ull << 33,
+	PlayerFlag_IgnoreSpellCheck = 1ull << 34,
+	PlayerFlag_IgnoreWeaponCheck = 1ull << 35,
+	PlayerFlag_CannotBeMuted = 1ull << 36,
+	PlayerFlag_IsAlwaysPremium = 1ull << 37,
+	PlayerFlag_CanAnswerRuleViolations = 1ull << 38,
 };
 
 #define CHANNEL_GUILD 0x00
