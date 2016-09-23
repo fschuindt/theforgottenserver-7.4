@@ -1552,7 +1552,15 @@ void Tile::resetTileFlags(const Item* item)
 	}
 
 	if (item->getMagicField()) {
-		resetFlag(TILESTATE_MAGICFIELD);
+		const auto itemList = getItemList();
+		if (!itemList) {
+			resetFlag(TILESTATE_MAGICFIELD);
+		} else {
+			const auto is_magic_field = [](const Item* item) { return item && item->getMagicField(); };
+			const auto itr = std::find_if(itemList->begin(), itemList->end(), is_magic_field);
+			if (itr == itemList->end())
+				resetFlag(TILESTATE_MAGICFIELD);
+		}
 	}
 
 	if (item->getMailbox()) {
