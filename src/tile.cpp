@@ -889,9 +889,8 @@ void Tile::addThing(int32_t, Thing* thing)
 			if (itemType.isMagicField()) {
 				//remove old field item if exists
 				if (items) {
-					const auto begin = items->getCBeginDownItem();
-					const auto end = items->getCEndDownItem();
-					for (auto it = begin; it != end; ++it) {
+					auto end = items->getCEndDownItem();
+					for (auto it = items->getCBeginDownItem(); it != end; ++it) {
 						MagicField* oldField = (*it)->getMagicField();
 						if (oldField) {
 							if (oldField->isReplaceable()) {
@@ -899,6 +898,9 @@ void Tile::addThing(int32_t, Thing* thing)
 								oldField->setParent(nullptr);
 								g_game.ReleaseItem(oldField);
 								postRemoveNotification(oldField, nullptr, 0);
+								// revalidate iterators after removal
+								it = items->getCBeginDownItem() - 1;
+								end = items->getCEndDownItem();
 							} else {
 								//This magic field cannot be replaced.
 								item->setParent(nullptr);
