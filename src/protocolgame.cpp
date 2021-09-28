@@ -1704,29 +1704,24 @@ void ProtocolGame::sendOutfitWindow()
 
 	AddOutfit(msg, player->getDefaultOutfit());
 
-	switch (player->getSex()) {
-	case PLAYERSEX_FEMALE:
+	if (player->getSex() == PLAYERSEX_FEMALE) {
 		msg.add<uint16_t>(136);
-		if (player->isPremium())
+		if (player->isPremium()) {
 			msg.add<uint16_t>(142);
-		else
+		} else {
 			msg.add<uint16_t>(139);
-
-		break;
-	case PLAYERSEX_MALE:
+		}
+	} else if (player->getSex() == PLAYERSEX_MALE) {
 		msg.add<uint16_t>(128);
-		if (player->isPremium())
+		if (player->isPremium()) {
 			msg.add<uint16_t>(134);
-		else
+		} else {
 			msg.add<uint16_t>(131);
-
-		break;
-	case 2:
+		}
+	} else if (player->getSex() == 2) {
 		msg.add<uint16_t>(160);
 		msg.add<uint16_t>(160);
-
-		break;
-	default:
+	} else {
 		msg.add<uint16_t>(128);
 		msg.add<uint16_t>(134);
 	}
