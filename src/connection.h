@@ -56,15 +56,15 @@ class ConnectionManager
 		std::mutex connectionManagerLock;
 };
 
+static constexpr int32_t CONNECTION_WRITE_TIMEOUT = 30;
+static constexpr int32_t CONNECTION_READ_TIMEOUT = 30;
+
 class Connection : public std::enable_shared_from_this<Connection>
 {
 	public:
 		// non-copyable
 		Connection(const Connection&) = delete;
 		Connection& operator=(const Connection&) = delete;
-
-		enum { write_timeout = 30 };
-		enum { read_timeout = 30 };
 
 		enum ConnectionState_t {
 			CONNECTION_STATE_OPEN,
